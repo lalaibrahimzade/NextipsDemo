@@ -1,0 +1,36 @@
+.navbar-main {
+    display: flex !important;
+    justify-content: space-around;
+    width: 615px;
+    height: 81px;
+    background-color: $dark-gray;
+
+
+    .child {
+        border: 1px solid $light-gray;
+        background-color: $gray;
+        border-radius: 50px;
+        display: inline-block;
+        padding-top: 8px;
+        color: aliceblue !important;
+    }
+
+    .child a {
+        text-decoration: none;
+        color: rgba(240, 248, 255, 0.5);
+    }
+
+    .c-first {
+        width: 187px;
+        height: 41px;
+        margin-right: 5px;
+    }
+
+    .c-second {
+        width: 124px;
+        height: 41px;
+        margin-left: 5px;
+    }
+}
+
+

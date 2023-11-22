@@ -1,0 +1,230 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+}
+.sidebar .sidebar-navigation {
+  float: right;
+  min-height: 462px;
+  width: 56px;
+  background-color: #1C1E24;
+  margin-right: 20px;
+}
+.sidebar .sidebar-navigation ul {
+  text-align: center !important;
+  color: white;
+}
+.sidebar .sidebar-navigation ul li {
+  padding: 19px 0;
+  cursor: pointer;
+  transition: all ease-out 120ms;
+  display: flex;
+  justify-content: center;
+}
+.sidebar .sidebar-navigation ul li a {
+  text-decoration: none;
+  color: white;
+}
+.sidebar .sidebar-navigation ul li a img {
+  transition: all ease 450ms;
+}
+.sidebar .sidebar-navigation ul li a .plus-div {
+  height: 36px;
+  width: 36px;
+  background-color: #3E80FD;
+  border-radius: 50px;
+  transition: all ease 450ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar .sidebar-navigation ul li a .tooltip {
+  display: inline-block;
+  position: absolute;
+  background-color: black;
+  padding: 8px 15px;
+  border-radius: 15px;
+  margin-top: -5px;
+  left: 250px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.sidebar .sidebar-navigation ul li:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card-coupon {
+  background-color: #1C1E24;
+  width: 614px;
+  margin: 0 auto;
+  padding: 20px 20px 10px 20px;
+  color: white;
+  border: 1px solid #333539;
+}
+.card-coupon .section-up {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.card-coupon .section-up .user-icon {
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.card-coupon .section-up .user {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+}
+.card-coupon .section-up .user .name {
+  font-size: 16px;
+  font-weight: 600;
+}
+.card-coupon .section-up .user .user-name {
+  font-size: 14px;
+  color: rgba(245, 245, 245, 0.582);
+}
+.card-coupon .btn-follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 31px;
+  border-radius: 50px;
+  border: 1px solid #333539;
+  background-color: #212328 !important;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+.card-coupon .centered {
+  display: flex;
+  margin-bottom: 5px;
+}
+.card-coupon .centered p {
+  text-align: left;
+  margin: 10px 10px;
+}
+.card-coupon .league {
+  display: flex;
+  flex-direction: column;
+  background-color: #212328;
+  border-radius: 15px;
+  padding: 10px;
+  height: 236px;
+}
+.card-coupon .league .league-header {
+  width: 564px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.card-coupon .league .league-header .lig-icon {
+  height: 18px;
+  width: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.card-coupon .league .league-header .lig-name {
+  margin-left: 10px;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+  font-size: 14px;
+  line-height: 14.52px;
+}
+.card-coupon .league .league-main {
+  background-color: #1C1E24;
+  width: 574px;
+  height: 120px;
+  padding: 10px;
+  align-self: center;
+  margin-bottom: 10px;
+}
+.card-coupon .league .league-main .team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.card-coupon .league .league-main .team .team-icon {
+  background-color: #212328;
+  width: 52px;
+  height: 52px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.card-coupon .league .league-main .team .team-name {
+  font-weight: 500;
+  font-size: 13px;
+}
+.card-coupon .league .league-main .team .time-icon {
+  background-color: #212328;
+  width: 32px;
+  height: 29px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.card-coupon .league .league-main .team .time p {
+  font-size: 12px;
+  font-weight: 600;
+  float: left;
+  margin-left: 5px;
+}
+.card-coupon .league .league-main .team .time .timer-icon {
+  width: 5px;
+  height: 13px;
+  background-color: #333539;
+  float: left;
+  border-radius: 50px;
+  margin-top: 4px;
+}
+.card-coupon .league .league-main .time-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.card-coupon .league .league-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 0 20px;
+}
+.card-coupon .league .league-footer .score {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-coupon .league .league-footer .score p {
+  font-size: 12px;
+  font-weight: 500;
+}
+.card-coupon .league .league-footer .score p.odd-score {
+  color: #51ff4d;
+}
+.card-coupon .section-down {
+  margin: 0 10px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 74px;
+}/*# sourceMappingURL=main.css.map */
