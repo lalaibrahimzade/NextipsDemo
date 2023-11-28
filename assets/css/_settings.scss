@@ -198,5 +198,151 @@
         color: $smoke-white;
       }
     }
+
+    .save-btn {
+      width: 567px;
+      height: 44px;
+      background-color: $primary-color;
+      border-radius: 15px;
+      border: none;
+      color: white;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 15px;
+    }
+  }
+
+  .setting-modal {
+    position: absolute;
+    z-index: 999;
+    top: 30% !important;
+    left: 37% !important;
+    width: 365px;
+    height: 281px;
+    top: 323px;
+    left: 508px;
+    border-radius: 16px;
+    gap: 16px;
+    border: 1px solid $light-gray;
+    background: $modal-background;
+    color: white;
+
+    .setting-modal-header {
+      border-bottom: 1px solid $light-gray;
+      height: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      padding-right: 16px;
+      .close {
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        border: 1px solid $light-gray;
+        cursor: pointer;
+      }
+    }
+
+    .setting-modal-main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 16px;
+
+      .setting-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+
+        .modal-btn {
+          display: flex;
+          width: 78px;
+          background-color: $btn-color;
+          color: $smoke-white;
+          border-radius: 50px;
+          padding: var(--3, 12px) var(--4, 16px);
+          justify-content: center;
+          align-items: center;
+          gap: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .add-password-sec {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 16px;
+      p {
+        color: #fff;
+        text-align: center;
+        opacity: 0.6;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      .pass-input {
+        position: relative;
+        width: 221px;
+        height: 44px;
+        margin-bottom: 16px;
+        border: 1px;
+        gap: 24px;
+
+        .password {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 0 15px 6px 10px;
+          width: 221px;
+          height: 44px;
+          border-radius: 15px;
+          border: 1px solid $gray;
+          background-color: $gray !important;
+          color: $smoke-white;
+          font-weight: 500;
+          font-size: 14px;
+          padding-left: 60px;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 106.2%; /* 14.868px */
+        }
+
+        .lock {
+          position: absolute;
+          top: 20%;
+          left: 3%;
+          width: 20px;
+          height: 20px;
+        }
+
+        .eye-icon {
+          position: absolute;
+          top: 30%;
+          right: 3%;
+          width: 20px;
+          height: 20px;
+          color: $smoke-white;
+        }
+      }
+
+      .deactive-btn {
+        width: 221px;
+        height: 44px;
+        border-radius: 15px;
+        background-color: $primary-color;
+        border: none;
+        color: #fff;
+      }
+    }
   }
 }
