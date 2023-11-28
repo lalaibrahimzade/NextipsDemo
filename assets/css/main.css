@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+.default {
+  min-width: 100vh;
+  min-height: 100vh;
+  background-color: rgb(26, 28, 33);
+}
+
 .sidebar {
   margin: 0;
   padding: 0;
@@ -6,8 +13,9 @@
   float: right;
   min-height: 462px;
   width: 56px;
-  background-color: #1C1E24;
-  margin-right: 20px;
+  background-color: rgb(26, 28, 33);
+  margin-right: 15px;
+  padding-right: 40px;
 }
 .sidebar .sidebar-navigation ul {
   text-align: center !important;
@@ -26,16 +34,21 @@
 }
 .sidebar .sidebar-navigation ul li a img {
   transition: all ease 450ms;
+  margin-right: 10px;
 }
 .sidebar .sidebar-navigation ul li a .plus-div {
   height: 36px;
   width: 36px;
-  background-color: #3E80FD;
+  margin-right: 10px;
+  background-color: rgb(62, 128, 253);
   border-radius: 50px;
   transition: all ease 450ms;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.sidebar .sidebar-navigation ul li a .plus-div img {
+  margin-left: 10px;
 }
 .sidebar .sidebar-navigation ul li a .tooltip {
   display: inline-block;
@@ -44,7 +57,7 @@
   padding: 8px 15px;
   border-radius: 15px;
   margin-top: -5px;
-  left: 250px;
+  left: 215px;
   opacity: 0;
   visibility: hidden;
   font-size: 13px;
@@ -55,72 +68,85 @@
   opacity: 1;
 }
 
-.card-coupon {
-  background-color: #1C1E24;
+.right-sidebar {
+  margin: 0;
+  padding: 0;
+}
+
+.coupons {
+  width: 615px;
+  height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.coupons .card-coupon {
+  background-color: rgb(26, 28, 33);
   width: 614px;
   margin: 0 auto;
   padding: 20px 20px 10px 20px;
   color: white;
-  border: 1px solid #333539;
+  border-left: 1px solid rgb(83, 85, 89);
+  border-bottom: 1px solid rgb(83, 85, 89);
 }
-.card-coupon .section-up {
+.coupons .card-coupon .section-up {
   height: 45px;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
-.card-coupon .section-up .user-icon {
+.coupons .card-coupon .section-up .user-icon {
   height: 40px;
   width: 40px;
   overflow: hidden;
   display: flex;
   align-items: center;
 }
-.card-coupon .section-up .user {
+.coupons .card-coupon .section-up .user {
   margin-left: 10px;
   display: flex;
   flex-direction: column;
   flex: 1;
   text-align: left;
 }
-.card-coupon .section-up .user .name {
+.coupons .card-coupon .section-up .user .name {
   font-size: 16px;
   font-weight: 600;
 }
-.card-coupon .section-up .user .user-name {
+.coupons .card-coupon .section-up .user .user-name {
   font-size: 14px;
   color: rgba(245, 245, 245, 0.582);
 }
-.card-coupon .btn-follow {
+.coupons .card-coupon .btn-follow {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 75px;
   height: 31px;
   border-radius: 50px;
-  border: 1px solid #333539;
-  background-color: #212328 !important;
+  border: 1px solid rgb(83, 85, 89);
+  background-color: rgb(39, 41, 46) !important;
   color: white;
   font-weight: 500;
   font-size: 14px;
 }
-.card-coupon .centered {
+.coupons .card-coupon .centered {
   display: flex;
   margin-bottom: 5px;
 }
-.card-coupon .centered p {
+.coupons .card-coupon .centered p {
   text-align: left;
   margin: 10px 10px;
 }
-.card-coupon .league {
+.coupons .card-coupon .league {
   display: flex;
   flex-direction: column;
-  background-color: #212328;
+  background-color: rgb(39, 41, 46);
   border-radius: 15px;
   padding: 10px;
   height: 236px;
+  border: 1px solid rgb(83, 85, 89);
 }
-.card-coupon .league .league-header {
+.coupons .card-coupon .league .league-header {
   width: 564px;
   height: 42px;
   display: flex;
@@ -129,14 +155,14 @@
   padding: 10px;
   margin-bottom: 10px;
 }
-.card-coupon .league .league-header .lig-icon {
+.coupons .card-coupon .league .league-header .lig-icon {
   height: 18px;
   width: 20px;
   overflow: hidden;
   display: flex;
   align-items: center;
 }
-.card-coupon .league .league-header .lig-name {
+.coupons .card-coupon .league .league-header .lig-name {
   margin-left: 10px;
   flex-direction: column;
   flex: 1;
@@ -144,22 +170,22 @@
   font-size: 14px;
   line-height: 14.52px;
 }
-.card-coupon .league .league-main {
-  background-color: #1C1E24;
-  width: 574px;
+.coupons .card-coupon .league .league-main {
+  background-color: rgb(33, 35, 40);
+  width: 568px;
   height: 120px;
   padding: 10px;
   align-self: center;
   margin-bottom: 10px;
 }
-.card-coupon .league .league-main .team {
+.coupons .card-coupon .league .league-main .team {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
 }
-.card-coupon .league .league-main .team .team-icon {
-  background-color: #212328;
+.coupons .card-coupon .league .league-main .team .team-icon {
+  background-color: rgb(83, 85, 89);
   width: 52px;
   height: 52px;
   border-radius: 50px;
@@ -168,12 +194,12 @@
   justify-content: center;
   margin-bottom: 5px;
 }
-.card-coupon .league .league-main .team .team-name {
+.coupons .card-coupon .league .league-main .team .team-name {
   font-weight: 500;
   font-size: 13px;
 }
-.card-coupon .league .league-main .team .time-icon {
-  background-color: #212328;
+.coupons .card-coupon .league .league-main .team .time-icon {
+  background-color: rgb(83, 85, 89);
   width: 32px;
   height: 29px;
   border-radius: 50px;
@@ -183,48 +209,2064 @@
   margin-bottom: 5px;
   margin-top: 15px;
 }
-.card-coupon .league .league-main .team .time p {
+.coupons .card-coupon .league .league-main .team .time {
+  width: 75px;
+  height: 21px;
+  background-color: #333539;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.coupons .card-coupon .league .league-main .team .time p {
   font-size: 12px;
   font-weight: 600;
   float: left;
   margin-left: 5px;
 }
-.card-coupon .league .league-main .team .time .timer-icon {
+.coupons .card-coupon .league .league-main .team .time .timer-icon {
   width: 5px;
   height: 13px;
-  background-color: #333539;
+  background-color: #4f5155;
   float: left;
   border-radius: 50px;
   margin-top: 4px;
+  margin-left: 3px;
 }
-.card-coupon .league .league-main .time-sec {
+.coupons .card-coupon .league .league-main .time-sec {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
 }
-.card-coupon .league .league-footer {
+.coupons .card-coupon .league .league-footer {
   display: flex;
   flex-direction: column;
   padding: 0 20px 0 20px;
+  color: rgba(255, 255, 255, 0.6);
 }
-.card-coupon .league .league-footer .score {
+.coupons .card-coupon .league .league-footer .score {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.card-coupon .league .league-footer .score p {
+.coupons .card-coupon .league .league-footer .score p {
   font-size: 12px;
   font-weight: 500;
 }
-.card-coupon .league .league-footer .score p.odd-score {
+.coupons .card-coupon .league .league-footer .score p.odd-score {
   color: #51ff4d;
 }
-.card-coupon .section-down {
+.coupons .card-coupon .section-down {
   margin: 0 10px 0 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
   height: 74px;
+}
+.coupons .card-coupon .section-down .icon {
+  float: left;
+  color: rgb(151, 151, 151);
+}
+.coupons .card-coupon .section-down .icon i {
+  width: 19px;
+  height: 17px;
+  cursor: pointer;
+}
+.coupons .card-coupon .section-down .icon .count {
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.94;
+}
+
+.coupons::-webkit-scrollbar {
+  width: 10px;
+  height: 25%;
+  border-radius: 16px;
+  border-left: 1px solid rgb(83, 85, 89);
+  border-right: 1px solid rgb(83, 85, 89);
+}
+
+.coupons::-webkit-scrollbar-thumb {
+  background-color: rgb(62, 128, 253);
+  border: 1px solid rgb(83, 85, 89);
+  border-radius: 16px;
+}
+
+.navbar-main {
+  display: flex !important;
+  justify-content: space-around;
+  width: 615px;
+  height: 81px;
+  background-color: rgb(33, 35, 40);
+  border: 1px solid rgb(83, 85, 89);
+}
+.navbar-main .parent .child {
+  border: 1px solid rgb(83, 85, 89);
+  background-color: rgb(39, 41, 46);
+  border-radius: 50px;
+  display: inline-block;
+  padding-top: 8px;
+  color: aliceblue !important;
+}
+.navbar-main .parent .child a {
+  text-decoration: none;
+  color: rgba(240, 248, 255, 0.5);
+}
+.navbar-main .parent .c-first {
+  width: 187px;
+  height: 41px;
+  margin-right: 5px;
+}
+.navbar-main .parent .c-second {
+  width: 124px;
+  height: 41px;
+  margin-left: 5px;
+}
+.navbar-main .setting-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 132px;
+}
+.navbar-main .setting-nav .setting-links {
+  background-color: rgb(39, 41, 46);
+  width: 381px;
+  height: 48px;
+  margin-right: auto;
+  margin-left: 24px;
+  font-weight: 500;
+  border: 1px;
+  padding: 12px 16px 12px 16px;
+  border-radius: 50px;
+  display: flex;
+  float: left;
+  align-items: center;
+  gap: 24px;
+}
+.navbar-main .setting-nav .setting-links img {
+  width: 16px;
+  height: 16px;
+}
+.navbar-main .setting-nav .setting-links a {
+  text-decoration: none;
+  color: rgb(151, 151, 151);
+}
+.navbar-main .setting-nav .setting-links a:hover {
+  color: white;
+}
+.navbar-main .setting-nav .search-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 29px;
+  background-color: rgb(39, 41, 46);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+form {
+  position: relative;
+}
+form .form-control:focus {
+  box-shadow: none;
+  background-color: rgb(39, 41, 46);
+  border-color: rgb(83, 85, 89);
+  color: rgba(245, 245, 245, 0.6588235294);
+}
+form img {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  color: gray;
+}
+form input[type=search] {
+  width: 322px;
+  height: 48px;
+  background-color: rgb(39, 41, 46);
+  padding: 12px 40px;
+  margin: 8px 0 8px 8px;
+  display: inline-block;
+  border: 1px solid rgb(83, 85, 89);
+  border-radius: 50px;
+  box-sizing: border-box;
+  color: rgba(245, 245, 245, 0.6588235294);
+}
+
+.popular-users {
+  width: 322px;
+  height: 274px;
+  background-color: rgb(33, 35, 40);
+  border-top: 1px solid rgb(83, 85, 89);
+  border-bottom: 1px solid rgb(83, 85, 89);
+  border-left: 1px solid rgb(83, 85, 89);
+  display: flex;
+  flex-direction: column;
+  float: right;
+  overflow: hidden;
+  margin-right: 8px;
+  color: white;
+  padding: 16px;
+  gap: 16px;
+  border-top-left-radius: 19px;
+  border-bottom-left-radius: 19px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.popular-users .head-text {
+  display: flex;
+  align-self: flex-start;
+  font-weight: 500;
+  font-size: 16px;
+}
+.popular-users .pp-user {
+  width: 290px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 25px 8px;
+}
+.popular-users .pp-user:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+}
+.popular-users .pp-user .avatar {
+  height: 33px;
+  width: 33px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.popular-users .pp-user .user {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+}
+.popular-users .pp-user .user .name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14.87px;
+}
+.popular-users .pp-user .user .user-name {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(245, 245, 245, 0.582);
+  line-height: 12.74px;
+}
+.popular-users .pp-user .btn-follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 61px;
+  height: 25px;
+  border-radius: 50px;
+  border: 1px solid rgb(83, 85, 89);
+  background-color: rgb(39, 41, 46) !important;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12.74px;
+}
+
+.forecasters-users {
+  width: 322px;
+  height: 274px;
+  background-color: rgb(33, 35, 40);
+  border-top: 1px solid rgb(83, 85, 89);
+  border-bottom: 1px solid rgb(83, 85, 89);
+  border-left: 1px solid rgb(83, 85, 89);
+  display: flex;
+  flex-direction: column;
+  float: right;
+  overflow: hidden;
+  margin-right: 8px;
+  color: white;
+  padding: 16px;
+  gap: 16px;
+  border-top-left-radius: 19px;
+  border-bottom-left-radius: 19px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.forecasters-users .head-forecaster {
+  display: flex;
+  align-self: flex-start;
+  font-weight: 500;
+  font-size: 16px;
+}
+.forecasters-users .forecaster-user {
+  width: 290px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 25px 8px !important;
+}
+.forecasters-users .forecaster-user:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+}
+.forecasters-users .forecaster-user .avatar {
+  height: 33px;
+  width: 33px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.forecasters-users .forecaster-user .user {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+}
+.forecasters-users .forecaster-user .user .name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14.87px;
+}
+.forecasters-users .forecaster-user .user .user-name {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(245, 245, 245, 0.582);
+  line-height: 12.74px;
+}
+.forecasters-users .forecaster-user .btn-follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 61px;
+  height: 25px;
+  border-radius: 50px;
+  border: 1px solid rgb(83, 85, 89);
+  background-color: rgb(39, 41, 46) !important;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12.74px;
+}
+
+.forecasters-users::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 19px;
+  border-left: 1px solid #333539;
+  border-right: 1px solid #333539;
+}
+
+.forecasters-users::-webkit-scrollbar-thumb {
+  background-color: rgb(62, 128, 253);
+  height: 25% !important;
+  border: 1px solid #333539;
+  border-radius: 16px;
+}
+
+.popular-users::-webkit-scrollbar {
+  width: 10px;
+  height: 20px !important;
+  border-radius: 19px;
+  border-left: 1px solid #333539;
+  border-right: 1px solid #333539;
+}
+
+.popular-users::-webkit-scrollbar-thumb {
+  background-color: rgb(62, 128, 253);
+  border: 1px solid #333539;
+  border-radius: 16px;
+}
+
+.sign-form {
+  position: absolute;
+  max-width: 798px;
+  height: 580px;
+  display: flex;
+  left: 300px;
+  transform: translate(50%, -50);
+  margin-left: auto;
+  flex-direction: column;
+  border-radius: 16px;
+  z-index: 2222;
+  border: 1px solid rgb(83, 85, 89);
+  color: white;
+  background-color: rgb(26, 28, 33);
+}
+.sign-form :focus-visible {
+  outline: none;
+}
+.sign-form .head-section {
+  background-color: rgb(33, 35, 40);
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  display: flex;
+  width: 796px;
+  height: 81px;
+  padding: 20px, 32px, 20px, 32px;
+  border-bottom: 1px solid #333539;
+  justify-content: center;
+}
+.sign-form .head-section .head-main {
+  margin-left: auto;
+  padding-left: 10px;
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-around;
+}
+.sign-form .head-section .head-main .head-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 10px 10px;
+  width: 75px;
+  height: 31px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid rgb(83, 85, 89);
+  background-color: rgb(39, 41, 46) !important;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+.sign-form .head-section .close {
+  cursor: pointer !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  border: 2px solid rgb(83, 85, 89);
+  margin-left: auto;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+.sign-form .sign-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sign-form .sign-centered .head-text {
+  width: 504px;
+  height: 34px;
+  font-size: 32px;
+  line-height: 33.98px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+.sign-form .sign-centered .centered-main, .sign-form .sign-centered .create-password .step-1 .phone-sec .centered-main, .sign-form .create-password .step-1 .phone-sec .sign-centered .centered-main {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+}
+.sign-form .sign-centered .centered-main .centered-btn, .sign-form .sign-centered .create-password .step-1 .phone-sec .centered-main .centered-btn, .sign-form .create-password .step-1 .phone-sec .sign-centered .centered-main .centered-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: #212328 !important;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+}
+.sign-form .sign-centered .centered-main .centered-btn i, .sign-form .sign-centered .create-password .step-1 .phone-sec .centered-main .centered-btn i, .sign-form .create-password .step-1 .phone-sec .sign-centered .centered-main .centered-btn i {
+  margin-right: 8px;
+}
+.sign-form .sign-centered p {
+  width: 253px;
+  height: 17px;
+  line-height: 16.99px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-right: 20px;
+  gap: 12px;
+}
+.sign-form .sign-centered p a {
+  text-decoration: none;
+}
+.sign-form .create-password {
+  position: absolute;
+  width: 540px;
+  height: 390px;
+  display: flex;
+  left: 120px;
+  top: 90px;
+  transform: translate(50%, -50);
+  margin-left: auto;
+  flex-direction: column;
+  color: white;
+  background-color: rgb(26, 28, 33);
+}
+.sign-form .create-password .step-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-form .create-password .step-1 .email-sec, .sign-form .create-password .step-1 .phone-sec {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.sign-form .create-password .step-1 .email-sec .head-text, .sign-form .create-password .step-1 .phone-sec .head-text {
+  text-align: center;
+  width: 282px;
+  font-size: 32px;
+  line-height: 33.98px;
+  font-weight: 600;
+  margin-right: 20px;
+  margin-top: 15px !important;
+}
+.sign-form .create-password .step-1 .email-sec .centered-main, .sign-form .create-password .step-1 .phone-sec .centered-main {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+}
+.sign-form .create-password .step-1 .email-sec .centered-main .pass-input, .sign-form .create-password .step-1 .phone-sec .centered-main .pass-input {
+  position: relative;
+}
+.sign-form .create-password .step-1 .email-sec .centered-main .pass-input .password, .sign-form .create-password .step-1 .phone-sec .centered-main .pass-input .password {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px 0 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: #212328 !important;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 38px;
+}
+.sign-form .create-password .step-1 .email-sec .centered-main .pass-input .letter, .sign-form .create-password .step-1 .phone-sec .centered-main .pass-input .letter {
+  position: absolute;
+  top: 22%;
+  left: 5%;
+  width: 20px;
+  height: 20px;
+}
+.sign-form .create-password .step-1 .email-sec .centered-main .continue, .sign-form .create-password .step-1 .phone-sec .centered-main .continue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: rgb(62, 128, 253) !important;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+}
+.sign-form .create-password .step-1 .email-sec .centered-main a, .sign-form .create-password .step-1 .phone-sec .centered-main a {
+  width: 169px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  opacity: 60%;
+  margin-left: 40px;
+}
+.sign-form .create-password .step-1 .email-sec .centered-main a .arrow, .sign-form .create-password .step-1 .phone-sec .centered-main a .arrow {
+  position: absolute;
+  left: -8%;
+}
+.sign-form .create-password .step-1 .phone-sec .head-text {
+  text-align: center;
+  width: 282px;
+  font-size: 32px;
+  line-height: 33.98px;
+  font-weight: 600;
+  margin-right: 20px;
+  margin-top: 15px !important;
+}
+.sign-form .create-password .step-1 .phone-sec .centered-main .pass-input {
+  position: relative;
+}
+.sign-form .create-password .step-1 .phone-sec .centered-main .pass-input .password {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px 0 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: #212328 !important;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 38px;
+}
+.sign-form .create-password .step-1 .phone-sec .centered-main .pass-input .phone {
+  position: absolute;
+  top: 22%;
+  left: 5%;
+  width: 20px;
+  height: 20px;
+}
+.sign-form .create-password .step-1 .phone-sec .centered-main .continue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: rgb(62, 128, 253) !important;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+}
+.sign-form .create-password .step-1 .phone-sec .centered-main a {
+  width: 169px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  opacity: 60%;
+  margin-left: 40px;
+}
+.sign-form .create-password .step-1 .phone-sec .centered-main a .arrow {
+  position: absolute;
+  left: -8%;
+}
+.sign-form .create-password .step-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 15px;
+}
+.sign-form .create-password .step-2 .otp-text {
+  margin-right: 65px;
+}
+.sign-form .create-password .step-2 .otp-text .head-text {
+  width: 300px;
+  font-size: 32px;
+  line-height: 33.98px;
+  font-weight: 600;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.sign-form .create-password .step-2 .otp-text .otp-paragraf {
+  width: 327px;
+  opacity: 60%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16.94px;
+  font-weight: 500;
+  margin-left: 90px;
+}
+.sign-form .create-password .step-2 .centered-main, .sign-form .create-password .step-2 .step-1 .phone-sec .centered-main, .sign-form .create-password .step-1 .phone-sec .step-2 .centered-main {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+}
+.sign-form .create-password .step-2 .centered-main .userInput .otpinput {
+  border: 1px solid #44464b;
+  border-radius: 16px;
+  width: 40px;
+  height: 56px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+  color: white;
+  background-color: #212328;
+}
+.sign-form .create-password .step-2 .centered-main .centered-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  margin: 0 10px 10px 50px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: #212328 !important;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+.sign-form .create-password .step-2 .centered-main .centered-btn img {
+  margin-right: 10px;
+  width: 20px;
+  height: 16px;
+}
+.sign-form .create-password .step-2 .centered-main .centered-btn.continue {
+  border: 1px solid #333539;
+  background-color: rgb(62, 128, 253) !important;
+  color: white;
+  justify-content: center;
+}
+.sign-form .create-password .step-2 p {
+  font-family: "Poppins", sans-serif;
+  width: 272px;
+  height: 24px;
+  line-height: 16.99px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 32px;
+  gap: 12px;
+}
+.sign-form .create-password .step-2 p a {
+  text-decoration: none;
+}
+.sign-form .create-password .step-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sign-form .create-password .step-3 .head-text {
+  width: 264px;
+  font-size: 32px;
+  line-height: 33.98px;
+  font-weight: 600;
+  margin-right: 20px;
+  margin-top: 15px !important;
+}
+.sign-form .create-password .step-3 p {
+  width: 327px;
+  text-align: center;
+  opacity: 60%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  margin-top: 5px;
+  margin-bottom: 32px;
+}
+.sign-form .create-password .step-3 .centered-main, .sign-form .create-password .step-3 .step-1 .phone-sec .centered-main, .sign-form .create-password .step-1 .phone-sec .step-3 .centered-main {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+}
+.sign-form .create-password .step-3 .centered-main .username {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: #212328 !important;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+}
+.sign-form .create-password .step-3 .centered-main .pass-input {
+  position: relative;
+}
+.sign-form .create-password .step-3 .centered-main .pass-input .password {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px 0 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: #212328 !important;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 38px;
+}
+.sign-form .create-password .step-3 .centered-main .pass-input .lock {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 20px;
+  height: 20px;
+}
+.sign-form .create-password .step-3 .centered-main .pass-input .eye-icon {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  width: 20px;
+  height: 20px;
+}
+.sign-form .create-password .step-3 .centered-main .sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: rgb(62, 128, 253) !important;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+}
+.sign-form .create-password .footer-section {
+  margin-bottom: 40px;
+  margin-top: 100px;
+  width: 504px;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 150px;
+}
+.sign-form .create-password .footer-section p {
+  font-weight: 400;
+  line-height: 16.94px;
+  font-size: 14px;
+  text-align: center;
+}
+.sign-form .login {
+  position: absolute;
+  width: 540px;
+  height: 390px;
+  display: flex;
+  left: 120px;
+  top: 90px;
+  transform: translate(50%, -50);
+  margin-left: auto;
+  flex-direction: column;
+  color: white;
+  background-color: rgb(26, 28, 33);
+}
+.sign-form .login .part-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-form .login .part-1 .email-sec, .sign-form .login .part-1 .create-password .step-1 .phone-sec, .sign-form .create-password .step-1 .login .part-1 .phone-sec {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.sign-form .login .part-1 .email-sec .head-text, .sign-form .login .part-1 .create-password .step-1 .phone-sec .head-text, .sign-form .create-password .step-1 .login .part-1 .phone-sec .head-text {
+  text-align: center;
+  width: 282px;
+  font-size: 32px;
+  line-height: 33.98px;
+  font-weight: 600;
+  margin-right: 20px;
+  margin-top: 15px !important;
+}
+.sign-form .login .part-1 .email-sec p, .sign-form .login .part-1 .create-password .step-1 .phone-sec p, .sign-form .create-password .step-1 .login .part-1 .phone-sec p {
+  width: 327px;
+  opacity: 0.6;
+  font-size: 14px;
+}
+.sign-form .login .part-1 .email-sec .centered-main, .sign-form .login .part-1 .create-password .step-1 .phone-sec .centered-main, .sign-form .create-password .step-1 .login .part-1 .phone-sec .centered-main {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+}
+.sign-form .login .part-1 .email-sec .centered-main .email-input, .sign-form .login .part-1 .create-password .step-1 .phone-sec .centered-main .email-input, .sign-form .create-password .step-1 .login .part-1 .phone-sec .centered-main .email-input {
+  position: relative;
+}
+.sign-form .login .part-1 .email-sec .centered-main .email-input .email, .sign-form .login .part-1 .create-password .step-1 .phone-sec .centered-main .email-input .email, .sign-form .create-password .step-1 .login .part-1 .phone-sec .centered-main .email-input .email {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px 0 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: #212328 !important;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 38px;
+}
+.sign-form .login .part-1 .email-sec .centered-main .email-input .letter, .sign-form .login .part-1 .create-password .step-1 .phone-sec .centered-main .email-input .letter, .sign-form .create-password .step-1 .login .part-1 .phone-sec .centered-main .email-input .letter {
+  position: absolute;
+  top: 22%;
+  left: 5%;
+  width: 20px;
+  height: 20px;
+}
+.sign-form .login .part-1 .email-sec .centered-main .pass-input, .sign-form .login .part-1 .create-password .step-1 .phone-sec .centered-main .pass-input, .sign-form .create-password .step-1 .login .part-1 .phone-sec .centered-main .pass-input {
+  position: relative;
+}
+.sign-form .login .part-1 .email-sec .centered-main .pass-input .password, .sign-form .login .part-1 .create-password .step-1 .phone-sec .centered-main .pass-input .password, .sign-form .create-password .step-1 .login .part-1 .phone-sec .centered-main .pass-input .password {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px 0 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: #212328 !important;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 38px;
+}
+.sign-form .login .part-1 .email-sec .centered-main .pass-input .lock, .sign-form .login .part-1 .create-password .step-1 .phone-sec .centered-main .pass-input .lock, .sign-form .create-password .step-1 .login .part-1 .phone-sec .centered-main .pass-input .lock {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 20px;
+  height: 20px;
+}
+.sign-form .login .part-1 .email-sec .centered-main .pass-input .eye-icon, .sign-form .login .part-1 .create-password .step-1 .phone-sec .centered-main .pass-input .eye-icon, .sign-form .create-password .step-1 .login .part-1 .phone-sec .centered-main .pass-input .eye-icon {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  width: 20px;
+  height: 20px;
+}
+.sign-form .login .part-1 .email-sec .centered-main .forgot, .sign-form .login .part-1 .create-password .step-1 .phone-sec .centered-main .forgot, .sign-form .create-password .step-1 .login .part-1 .phone-sec .centered-main .forgot {
+  width: 110px;
+  height: 18px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(62, 128, 253);
+  text-decoration: underline;
+  margin-bottom: 12px;
+  margin-left: 0;
+}
+.sign-form .login .part-1 .email-sec .centered-main .continue, .sign-form .login .part-1 .create-password .step-1 .phone-sec .centered-main .continue, .sign-form .create-password .step-1 .login .part-1 .phone-sec .centered-main .continue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: rgb(62, 128, 253) !important;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+}
+.sign-form .login .part-1 .email-sec .centered-main a, .sign-form .login .part-1 .create-password .step-1 .phone-sec .centered-main a, .sign-form .create-password .step-1 .login .part-1 .phone-sec .centered-main a {
+  width: 169px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  opacity: 60%;
+  margin-left: 40px;
+}
+.sign-form .login .part-1 .email-sec .centered-main a .arrow, .sign-form .login .part-1 .create-password .step-1 .phone-sec .centered-main a .arrow, .sign-form .create-password .step-1 .login .part-1 .phone-sec .centered-main a .arrow {
+  position: absolute;
+  left: -8%;
+}
+.sign-form .login .part-1 .phone-sec {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.sign-form .login .part-1 .phone-sec .head-text {
+  text-align: center;
+  width: 308px;
+  font-size: 32px;
+  line-height: 33.98px;
+  font-weight: 600;
+  margin-right: 20px;
+  margin-top: 15px !important;
+}
+.sign-form .login .part-1 .phone-sec p {
+  width: 327px;
+  opacity: 0.6;
+  font-size: 14px;
+}
+.sign-form .login .part-1 .phone-sec .centered-main {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+}
+.sign-form .login .part-1 .phone-sec .centered-main .number-input {
+  position: relative;
+}
+.sign-form .login .part-1 .phone-sec .centered-main .number-input .number {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px 0 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: #212328 !important;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 38px;
+}
+.sign-form .login .part-1 .phone-sec .centered-main .number-input .phone {
+  position: absolute;
+  top: 22%;
+  left: 5%;
+  width: 20px;
+  height: 20px;
+}
+.sign-form .login .part-1 .phone-sec .centered-main .pass-input {
+  position: relative;
+}
+.sign-form .login .part-1 .phone-sec .centered-main .pass-input .password {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px 0 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: #212328 !important;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 38px;
+}
+.sign-form .login .part-1 .phone-sec .centered-main .pass-input .lock {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 20px;
+  height: 20px;
+}
+.sign-form .login .part-1 .phone-sec .centered-main .pass-input .eye-icon {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  width: 20px;
+  height: 20px;
+}
+.sign-form .login .part-1 .phone-sec .centered-main .forgot {
+  width: 110px;
+  height: 18px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(62, 128, 253);
+  text-decoration: underline;
+  margin-bottom: 12px;
+  margin-left: 0;
+}
+.sign-form .login .part-1 .phone-sec .centered-main .continue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: rgb(62, 128, 253) !important;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+}
+.sign-form .login .part-1 .phone-sec .centered-main a {
+  width: 169px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  opacity: 60%;
+  margin-left: 40px;
+}
+.sign-form .login .part-1 .phone-sec .centered-main a .arrow {
+  position: absolute;
+  left: -8%;
+}
+.sign-form .footer-section {
+  margin-bottom: 45px;
+  margin-top: auto;
+  width: 504px;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 150px;
+}
+.sign-form .footer-section p {
+  font-weight: 400;
+  line-height: 16.94px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.addGame {
+  display: flex;
+}
+.addGame .countries {
+  width: 154px;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  display: flex;
+  background-color: rgb(39, 41, 46);
+  margin-top: 12px;
+  border-radius: 8px;
+  flex-direction: column;
+  color: white;
+}
+.addGame .countries .sec-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.addGame .countries .sec-one h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.003em;
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 0.3%;
+}
+.addGame .countries .sec-main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 154px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  min-height: 184px;
+  background-color: rgb(33, 35, 40);
+}
+.addGame .countries .sec-main .search-input form .form-control:focus {
+  box-shadow: none;
+  background-color: rgb(39, 41, 46);
+  border-color: rgb(83, 85, 89);
+  color: rgba(245, 245, 245, 0.6588235294);
+}
+.addGame .countries .sec-main .search-input form img {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 15px;
+  top: 13px;
+  color: gray;
+}
+.addGame .countries .sec-main .search-input form input[type=search] {
+  width: 144px;
+  height: 24px;
+  font-size: 12px;
+  background-color: rgb(39, 41, 46);
+  padding: 10px 24px;
+  margin: 8px 0 8px 8px;
+  display: inline-block;
+  border: 1px solid rgb(39, 41, 46);
+  border-radius: 50px;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.15);
+}
+.addGame .countries .sec-main .collapse-sec .country-sec {
+  width: 144px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  float: left;
+  gap: 25px;
+}
+.addGame .countries .sec-main .collapse-sec .country-sec .country {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: center;
+}
+.addGame .countries .sec-main .collapse-sec .country-sec .country .flag {
+  width: 15px;
+  height: 15px;
+}
+.addGame .countries .sec-main .collapse-sec .country-sec .country h1 {
+  font-size: 12px;
+  text-align: left;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+.addGame .countries .sec-main .collapse-sec .country-sec .icon {
+  margin-left: auto;
+  margin-right: 8px;
+}
+.addGame .countries .sec-main .collapse-sec .country-sec .icon i {
+  width: 6px;
+  height: 4px;
+  opacity: 60%;
+}
+.addGame .countries .sec-main .collapse-sec ul {
+  width: 144px;
+  height: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.addGame .countries .sec-main .collapse-sec ul li {
+  width: 144px;
+  display: flex;
+  float: left;
+  align-items: center;
+}
+.addGame .countries .sec-main .collapse-sec ul li .ligs {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: center;
+}
+.addGame .countries .sec-main .collapse-sec ul li .ligs .lig-icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addGame .countries .sec-main .collapse-sec ul li .ligs .lig-icon img {
+  width: 7px;
+  height: 10px;
+}
+.addGame .countries .sec-main .collapse-sec ul li .ligs h1 {
+  font-size: 10px;
+  text-align: left;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+.addGame .countries .sec-main .collapse-sec ul.collapsed {
+  display: none;
+}
+.addGame .countries .sec-footer {
+  width: 154px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addGame .countries .sec-footer .arrow-icon {
+  width: 7.76px;
+  height: 3.76px;
+}
+.addGame .couponlig {
+  width: 438px;
+  height: 100%;
+  background-color: rgb(39, 41, 46);
+  color: white;
+  border-radius: 8px;
+  margin-top: 12px;
+  margin-left: 23px;
+}
+.addGame .couponlig .head-couponlig {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+  position: relative;
+  height: 30px;
+}
+.addGame .couponlig .head-couponlig .lig-name {
+  width: 184px;
+  height: 25px;
+  display: flex;
+  margin-left: 12px;
+  justify-content: space-between;
+}
+.addGame .couponlig .head-couponlig .lig-name .flag {
+  width: 12px;
+  height: 12px;
+}
+.addGame .couponlig .head-couponlig .lig-name p {
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 12px;
+}
+.addGame .couponlig .head-couponlig .pin-icon {
+  position: absolute;
+  top: -1px;
+  left: 52%;
+}
+.addGame .couponlig .head-couponlig .pin-icon img {
+  height: 17px;
+  width: 17px;
+}
+.addGame .couponlig .head-couponlig .coefficient-sections {
+  display: flex;
+  max-width: 190px;
+  margin-right: 30px;
+  margin-left: 36px;
+  gap: 40px;
+}
+.addGame .couponlig .head-couponlig .coefficient-sections .part-one {
+  width: 12px;
+  height: 13px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 12px;
+}
+.addGame .couponlig .head-couponlig .coefficient-sections .icon {
+  width: 12px;
+  height: 13px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 12px;
+}
+.addGame .couponlig .head-couponlig .coefficient-sections .part-two {
+  width: 12px;
+  height: 13px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 12px;
+}
+.addGame .couponlig .lig-card {
+  width: 438px;
+  height: 56px;
+  padding: 4px 0px 4px 14px;
+  display: flex;
+  background-color: rgb(33, 35, 40);
+  border-bottom: 1px solid rgb(83, 85, 89);
+  cursor: pointer;
+}
+.addGame .couponlig .lig-card .time-sec {
+  margin-right: 14px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0px 4px 14px;
+  color: rgb(151, 151, 151);
+}
+.addGame .couponlig .lig-card .time-sec .date {
+  width: 39px;
+  height: 15px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.003em;
+  text-align: center;
+}
+.addGame .couponlig .lig-card .time-sec .time {
+  width: 32px;
+  height: 13px;
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0.003em;
+  text-align: center;
+}
+.addGame .couponlig .lig-card .teams {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  height: 48px;
+  padding: 0px 0 6px 0;
+  row-gap: 5px;
+}
+.addGame .couponlig .lig-card .teams .team-first {
+  display: flex;
+  height: 15px;
+}
+.addGame .couponlig .lig-card .teams .team-first .team-head {
+  display: flex;
+}
+.addGame .couponlig .lig-card .teams .team-first .team-head img {
+  margin-top: 8px;
+  width: 15px;
+  height: 15px;
+}
+.addGame .couponlig .lig-card .teams .team-first .team-head h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.003em;
+  text-align: left;
+  margin-left: 5px;
+}
+.addGame .couponlig .lig-card .teams .team-first p {
+  margin-top: 3px;
+  margin-left: auto;
+}
+.addGame .couponlig .lig-card .teams .team-second {
+  display: flex;
+  height: 15px;
+}
+.addGame .couponlig .lig-card .teams .team-second .team-head {
+  display: flex;
+}
+.addGame .couponlig .lig-card .teams .team-second .team-head img {
+  margin-top: 8px;
+  width: 15px;
+  height: 15px;
+}
+.addGame .couponlig .lig-card .teams .team-second .team-head h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.003em;
+  text-align: left;
+  margin-left: 5px;
+}
+.addGame .couponlig .lig-card .teams .team-second p {
+  margin-top: 3px;
+  margin-left: auto;
+}
+.addGame .couponlig .lig-card .coefficient {
+  display: flex;
+  float: left;
+  max-width: 190px;
+  max-height: 21px;
+  margin-left: 53px;
+  margin-top: 15px;
+  color: rgb(151, 151, 151);
+  gap: 8px;
+}
+.addGame .couponlig .lig-card .coefficient .count-coefficient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.003em;
+  border: 1px solid rgb(83, 85, 89);
+}
+.addGame .odds-section {
+  margin-top: 12px;
+  margin-left: 23px;
+}
+.addGame .odds-section .odds {
+  width: 438px;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 17px;
+}
+.addGame .odds-section .odds .head-odds {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  background-color: rgb(39, 41, 46);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+.addGame .odds-section .odds .head-odds .lig-name {
+  width: 184px;
+  height: 25px;
+  display: flex;
+  margin-left: 12px;
+  justify-content: space-between;
+}
+.addGame .odds-section .odds .head-odds .lig-name .flag {
+  width: 12px;
+  height: 12px;
+}
+.addGame .odds-section .odds .head-odds .lig-name p {
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 12px;
+}
+.addGame .odds-section .odds .head-odds .coefficient-sections {
+  display: flex;
+  max-width: 190px;
+  margin-right: 30px;
+  margin-left: 36px;
+  gap: 40px;
+}
+.addGame .odds-section .odds .head-odds .coefficient-sections .part-one {
+  width: 12px;
+  height: 13px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 12px;
+}
+.addGame .odds-section .odds .head-odds .coefficient-sections .icon {
+  width: 12px;
+  height: 13px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 12px;
+}
+.addGame .odds-section .odds .head-odds .coefficient-sections .part-two {
+  width: 12px;
+  height: 13px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 12px;
+}
+.addGame .odds-section .odds .lig-card {
+  width: 438px;
+  height: 56px;
+  overflow: hidden;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 4px 0px 4px 14px;
+  display: flex;
+  background-color: rgb(33, 35, 40);
+}
+.addGame .odds-section .odds .lig-card .time-sec {
+  margin-right: 14px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0px 4px 14px;
+  color: rgb(151, 151, 151);
+}
+.addGame .odds-section .odds .lig-card .time-sec .date {
+  width: 39px;
+  height: 15px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.003em;
+  text-align: center;
+}
+.addGame .odds-section .odds .lig-card .time-sec .time {
+  width: 32px;
+  height: 13px;
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0.003em;
+  text-align: center;
+}
+.addGame .odds-section .odds .lig-card .teams {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  height: 48px;
+  padding: 0px 0 6px 0;
+  row-gap: 5px;
+}
+.addGame .odds-section .odds .lig-card .teams .team-first {
+  display: flex;
+  height: 15px;
+}
+.addGame .odds-section .odds .lig-card .teams .team-first .team-head {
+  display: flex;
+}
+.addGame .odds-section .odds .lig-card .teams .team-first .team-head img {
+  margin-top: 8px;
+  width: 15px;
+  height: 15px;
+}
+.addGame .odds-section .odds .lig-card .teams .team-first .team-head h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.003em;
+  text-align: left;
+  margin-left: 5px;
+}
+.addGame .odds-section .odds .lig-card .teams .team-first p {
+  margin-top: 3px;
+  margin-left: auto;
+}
+.addGame .odds-section .odds .lig-card .teams .team-second {
+  display: flex;
+  height: 15px;
+}
+.addGame .odds-section .odds .lig-card .teams .team-second .team-head {
+  display: flex;
+}
+.addGame .odds-section .odds .lig-card .teams .team-second .team-head img {
+  margin-top: 8px;
+  width: 15px;
+  height: 15px;
+}
+.addGame .odds-section .odds .lig-card .teams .team-second .team-head h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.003em;
+  text-align: left;
+  margin-left: 5px;
+}
+.addGame .odds-section .odds .lig-card .teams .team-second p {
+  margin-top: 3px;
+  margin-left: auto;
+}
+.addGame .odds-section .odds .lig-card .coefficient {
+  display: flex;
+  float: left;
+  max-width: 190px;
+  max-height: 21px;
+  margin-left: 53px;
+  margin-top: 15px;
+  color: rgb(151, 151, 151);
+  gap: 8px;
+}
+.addGame .odds-section .odds .lig-card .coefficient .count-coefficient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.003em;
+  border: 1px solid rgb(83, 85, 89);
+}
+.addGame .odds-section .odds-information-sec {
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-direction: column;
+  background-color: rgb(39, 41, 46);
+  border-radius: 8px;
+  gap: 16px;
+}
+.addGame .odds-section .odds-information-sec .odds-information {
+  width: 430px;
+  height: 32px;
+  color: white;
+  display: flex;
+  padding: 12px 16px 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.addGame .odds-section .odds-information-sec .odds-information p {
+  width: 100%;
+  height: 0;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  align-self: center;
+}
+.addGame .odds-section .odds-information-sec .odds-information .icon {
+  cursor: pointer;
+}
+.addGame .odds-section ul {
+  height: 60px;
+  list-style: none;
+  display: flex;
+  float: left;
+  gap: 35px;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.addGame .odds-section ul li {
+  width: 80px;
+  height: 41px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(83, 85, 89);
+  cursor: pointer;
+  font-family: "Inter";
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: 500;
+  letter-spacing: 0em;
+}
+.addGame .odds-section ul.collapsed {
+  display: none;
+}
+.addGame .couponCard {
+  display: flex;
+  flex-direction: column;
+  margin-left: 22px;
+}
+.addGame .couponCard .league-couponCard {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 41, 46);
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 12px;
+  width: 438px;
+  height: 240px;
+  color: white;
+}
+.addGame .couponCard .league-couponCard .league-header {
+  width: 440px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.addGame .couponCard .league-couponCard .league-header .lig-icon {
+  height: 18px;
+  width: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.addGame .couponCard .league-couponCard .league-header .lig-name {
+  margin-left: 10px;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+  font-size: 14px;
+  line-height: 14.52px;
+}
+.addGame .couponCard .league-couponCard .league-header .close {
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.addGame .couponCard .league-couponCard .league-main {
+  background-color: rgb(33, 35, 40);
+  width: 438px;
+  height: 120px;
+  padding: 10px;
+  align-self: center;
+  margin-bottom: 10px;
+}
+.addGame .couponCard .league-couponCard .league-main .team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.addGame .couponCard .league-couponCard .league-main .team .team-icon {
+  background-color: rgb(83, 85, 89);
+  width: 52px;
+  height: 52px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.addGame .couponCard .league-couponCard .league-main .team .team-name {
+  font-weight: 500;
+  font-size: 13px;
+}
+.addGame .couponCard .league-couponCard .league-main .team .time-icon {
+  background-color: rgb(83, 85, 89);
+  width: 32px;
+  height: 29px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.addGame .couponCard .league-couponCard .league-main .team .time {
+  width: 75px;
+  height: 21px;
+  background-color: #333539;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.addGame .couponCard .league-couponCard .league-main .team .time p {
+  font-size: 12px;
+  font-weight: 600;
+  float: left;
+  margin-left: 5px;
+}
+.addGame .couponCard .league-couponCard .league-main .team .time .timer-icon {
+  width: 5px;
+  height: 13px;
+  background-color: #4f5155;
+  float: left;
+  border-radius: 50px;
+  margin-top: 4px;
+  margin-left: 3px;
+}
+.addGame .couponCard .league-couponCard .league-main .time-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.addGame .couponCard .league-couponCard .league-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 0 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.addGame .couponCard .league-couponCard .league-footer .score {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.addGame .couponCard .league-couponCard .league-footer .score p {
+  font-size: 12px;
+  font-weight: 500;
+}
+.addGame .couponCard .league-couponCard .league-footer .score p.odd-score {
+  color: #51ff4d;
+}
+.addGame .couponCard .footer-cuponCard {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 9px;
+  gap: 16px;
+  width: 440px;
+}
+.addGame .couponCard .footer-cuponCard .post {
+  background-color: rgb(62, 128, 253);
+  width: 92px;
+  height: 41px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.addGame .couponCard .footer-cuponCard .add-new {
+  background-color: rgb(33, 35, 40);
+  width: 92px;
+  height: 41px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.settings-sec {
+  border-left: 1px solid rgb(83, 85, 89);
+  border-right: 1px solid rgb(83, 85, 89);
+  width: 615px;
+  height: 100vh;
+  padding: 20px 29px 16px 24px;
+}
+.settings-sec .settings-item-main .settings-items {
+  display: flex;
+  float: left;
+  align-items: center;
+  background-color: rgb(39, 41, 46);
+  color: rgb(151, 151, 151);
+  width: 562px;
+  height: 48px;
+  padding: 12px 16px 12px 16px;
+  margin-bottom: 16px;
+  border-radius: 15px;
+  border: 1px;
+  gap: 24px;
+}
+.settings-sec .settings-item-main .settings-items p {
+  width: 156px;
+  height: 17px;
+  cursor: pointer;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17px;
+  margin-top: 15px;
+  text-align: left;
+}
+.settings-sec .account-information .settings-items {
+  display: flex;
+  float: left;
+  align-items: center;
+  background-color: rgb(39, 41, 46);
+  color: rgb(151, 151, 151);
+  width: 562px;
+  height: 48px;
+  padding: 12px 16px 12px 16px;
+  margin-bottom: 16px;
+  border-radius: 15px;
+  border: 1px;
+  gap: 24px;
+}
+.settings-sec .account-information .settings-items input {
+  background-color: rgb(39, 41, 46);
+  border: none;
+  width: 100%;
+  height: 25px;
+  color: white;
+}
+.settings-sec .account-information .settings-items input:focus {
+  outline: none;
+}
+.settings-sec .account-information .send-btn {
+  width: 567px;
+  height: 44px;
+  background-color: rgb(62, 128, 253);
+  border-radius: 15px;
+  border: none;
+  color: white;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
+}
+.settings-sec .security {
+  display: flex;
+  float: left;
+  align-items: center;
+  background-color: rgb(39, 41, 46);
+  color: rgb(151, 151, 151);
+  width: 562px;
+  height: 48px;
+  padding: 12px 16px 12px 16px;
+  margin-bottom: 16px;
+  border-radius: 15px;
+  border: 1px;
+  gap: 24px;
+}
+.settings-sec .security p {
+  width: 100%;
+  height: 17px;
+  cursor: pointer;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17px;
+  margin-top: 15px;
+  text-align: left;
+}
+.settings-sec .security.verification {
+  position: relative;
+}
+.settings-sec .security.verification .toggle-btn {
+  position: absolute;
+  right: 15px;
+  bottom: 8px;
+  margin-left: auto;
+}
+.settings-sec .security.verification .toggle-btn input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.settings-sec .security.verification .toggle-btn label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 56px;
+  height: 32px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+.settings-sec .security.verification .toggle-btn label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+.settings-sec .security.verification .toggle-btn input:checked + label {
+  background: rgb(62, 128, 253);
+}
+.settings-sec .security.verification .toggle-btn input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+.settings-sec .change-password .pass-input {
+  position: relative;
+  display: flex;
+  float: left;
+  width: 562px;
+  height: 48px;
+  margin-bottom: 16px;
+  border: 1px;
+  gap: 24px;
+}
+.settings-sec .change-password .pass-input .password {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px 6px 10px;
+  width: 562px;
+  height: 48px;
+  border-radius: 15px;
+  border: 1px solid rgb(39, 41, 46);
+  background-color: rgb(39, 41, 46) !important;
+  color: rgb(151, 151, 151);
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 60px;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 106.2%; /* 14.868px */
+}
+.settings-sec .change-password .pass-input .lock {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  width: 20px;
+  height: 20px;
+}
+.settings-sec .change-password .pass-input .eye-icon {
+  position: absolute;
+  top: 25%;
+  right: 7%;
+  width: 20px;
+  height: 20px;
+  color: rgb(151, 151, 151);
 }/*# sourceMappingURL=main.css.map */

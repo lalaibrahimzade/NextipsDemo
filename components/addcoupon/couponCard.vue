@@ -4,7 +4,7 @@
         <div class="league-header">
             <img src="../../assets/image/lig-icon.svg" alt="avatar" class="lig-icon">
             <div class="lig-name">Ukraine Premiere League</div>
-            <div class="close">X</div>
+            <div class="close" @click="close">X</div>
         </div>
         <div class="league-main">
             <div class="row">
@@ -52,14 +52,23 @@
     </div>
     <div class="footer-cuponCard">
         <button class="post">Post</button>
-        <button class="add-new">Add new</button>
+        <button class="add-new" @click="addNew">Add new</button>
     </div>
 </div>
 </template>
 
 <script>
+import eventBus from '~/plugins/event-bus';
 export default {
-  name: "couponCard"
+  name: "couponCard",
+  methods: {
+    close() {
+      eventBus.$emit('closeCouponCard');
+    },
+    addNew() {
+      eventBus.$emit('addNewCouponCard');
+    },
+  },
 }
 </script>
 

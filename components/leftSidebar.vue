@@ -24,25 +24,35 @@
                         <span class="tooltip">Notifications</span>
                     </a>
                 </li>
-                <li >
+                <li>
                    <a href="#">
                     <img src="../assets/image/save.svg" alt="home-icon">
                     <span class="tooltip">Save</span>
                    </a>
                 </li>
-                <li>
+                <li @click="addGameHandle(true)">
                     <nuxt-link to="/live" >
+                      <a href="#">
+                        <img src="../assets/image/live.svg" alt="live-icon">
+                        <span class="tooltip">Live</span>
+                      </a>
+                    </nuxt-link>
+                </li>
+                <li>
+                    <nuxt-link to="">
                         <a href="#">
-                            <img src="../assets/image/live.svg" alt="live-icon">
-                            <span class="tooltip">Live</span>
+                            <img src="../assets/image/list.svg" alt="list-icon">
+                            <span class="tooltip">News</span>
                         </a>
                     </nuxt-link>
                 </li>
-                <li >
-                    <a href="#">
-                        <img src="../assets/image/list.svg" alt="list-icon">
-                        <span class="tooltip">News</span>
-                    </a>
+                <li @click="showSettingsItemMain(true)">
+                    <nuxt-link to="/settings">
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="tooltip">Settings</span>
+                        </a>
+                    </nuxt-link>
                 </li>
                 <li @click="authModalHandle(true)">
                     <a href="#">
@@ -67,6 +77,7 @@
 
 <script>
 import auth from './auth/auth';
+import eventBus from '~/plugins/event-bus';
 export default {
   name: "leftSidebar",
   components:{auth},
@@ -81,8 +92,12 @@ export default {
         this.authModalIsOpen=true
         this.$emit('authModalOpenned')
     },
-
-
+    addGameHandle() {
+      eventBus.$emit('liveItemClick');
+    },
+    showSettingsItemMain(){
+        eventBus.$emit('settingMain')
+    }
   }
 }
 </script>

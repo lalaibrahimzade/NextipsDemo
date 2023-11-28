@@ -58,7 +58,7 @@ methods: {
     
     gameOption(param){
           this.$emit('gameOption')
-        },
+    },
   },
 
 }

@@ -42,7 +42,8 @@ export default {
     '~/plugins/vuelidate',
     '~/plugins/axios.js',
     '~/plugins/fontawesome.js',
-   '~/plugins/vue-masonry-wall.js'
+   '~/plugins/vue-masonry-wall.js',
+   '~/plugins/event-bus.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

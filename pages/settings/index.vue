@@ -1,13 +1,13 @@
 <template>
     <div>
-        <addGame/>
+        <settings/>
     </div>
 </template>
 
 <script>
-import addGame from '../../components/addcoupon/addGame';
+import settings from '../../components/settings/settings';
 export default {
-components : { addGame},
+components : { settings},
 data(){
     return{
         

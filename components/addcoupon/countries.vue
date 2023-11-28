@@ -52,6 +52,7 @@ export default {
       ],
       collapses: [
         { id: 1, name: "France", flag: "../../assets/image/az.svg" },
+        { id: 2, name: "France", flag: "../../assets/image/az.svg" },
       ],
     };
   },
@@ -67,7 +68,9 @@ export default {
     isCollapsed(id) {
       return this.isCollapsedCountries.includes(id);
     },
+  
   },
+
 
 }
 </script>
