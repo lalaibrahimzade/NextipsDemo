@@ -58,7 +58,7 @@ export default {
     '@nuxtjs/toast',
     '@nuxtjs/auth-next',
     'nuxt-vue-select',
-  
+
     ['cookie-universal-nuxt', {alias: 'cookiz'}],
     ['nuxt-gmaps', {
       key: 'AIzaSyDawcLDvC2WON9zapZRodRmzoNpC6LJdd4',
@@ -82,19 +82,20 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   axios: {
-    baseUrl: 'http://myhome.test/api',
+    baseUrl: 'http://nextips.test',
     credentials: false,
 
   },
   auth: {
     strategies: {
       local: {
-        url: 'http://myhome.test/api',
+        url: 'http://nextips.test',
 
         endpoints: {
-          login: {url: '/auth-user/login', method: 'post', propertyName: 'data.token'},
-          logout: {url: '/auth-user/logout', method: 'post',},
-          user: {url: '/auth-user/user', method: 'get', propertyName: 'data'}
+          login: {url: '/front/login', method: 'post', propertyName: 'token'},
+
+          logout: {url: '/front/logout', method: 'post',},
+          user: {url: '/front/user', method: 'get', propertyName: 'user'}
         },
         redirect: {
           login: '/login',
@@ -105,7 +106,7 @@ export default {
           autoFetch: true
         },
         token: {
-          property: 'data.token',
+          property: 'token',
           maxAge: 15768000,
           global: true
         }

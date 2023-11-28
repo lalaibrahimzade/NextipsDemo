@@ -11,13 +11,13 @@
                </div>
                <div class="pass-input">
                 <img src="../../assets/image/lock.svg" alt="lock icon" class="lock">
-                <input :type="passwordVisible ? 'text' :'password' " class="password" placeholder="Your password">
-                <div @click="passwordVisible=!passwordVisible"><i 
+                <input v-model="form.password" :type="passwordVisible ? 'text' :'password' " class="password" placeholder="Your password">
+                <div @click="passwordVisible=!passwordVisible"><i
                     class="eye-icon" :class="passwordVisible ? 'fas fa-eye-slash ' : 'fas fa-eye'"
                 ></i></div>
             </div>
             <a href="#" class="forgot">Forgot password?</a>
-               <button class="continue" @click="nextStep()">Sign in</button>
+               <button class="continue" @click="login()">Sign in</button>
             <a href="#" @click="signInOption()"><img src="../../assets/image/right-arrow.svg" alt="left arrow" class="arrow">Other sign in option</a>
              </div>
             </div>
@@ -32,7 +32,7 @@
                   <div class="pass-input">
                    <img src="../../assets/image/lock.svg" alt="lock icon" class="lock">
                    <input :type="passwordVisible ? 'text' :'password' " class="password" placeholder="Your password">
-                   <div @click="passwordVisible=!passwordVisible"><i 
+                   <div @click="passwordVisible=!passwordVisible"><i
                        class="eye-icon" :class="passwordVisible ? 'fas fa-eye-slash ' : 'fas fa-eye'"
                    ></i></div>
                </div>
@@ -55,12 +55,22 @@ export default {
         repeatPasswordVisible:false,
         form:{
             email:null,
-            otp:null
+            otp:null,
+            password:null,
+
         }
     }
   },
   props:['signIn'],
   methods: {
+    async login() {
+      try {
+        let response = await this.$auth.loginWith('local', {data:{ email:this.form.email,password:this.form.password} })
+        console.log(response)
+      } catch (err) {
+        console.log(err)
+      }
+    },
     nextStep(){
         this.step++;
     },
