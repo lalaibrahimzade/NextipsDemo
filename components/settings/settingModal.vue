@@ -30,6 +30,7 @@
           </div>
           <button class="deactive-btn" @click="nextModal()">Deactive</button>
      </div>
+     
 </div>
 </template>
 
