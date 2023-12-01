@@ -1,0 +1,213 @@
+.notification-section {
+  width: 615px;
+  height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-left: 1px solid $light-gray;
+  padding: 15px 24px 24px 24px;
+  .notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .date-notification {
+      width: 615px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .date {
+        display: flex;
+        align-items: flex-start;
+        padding: 0 24px 0 24px;
+        color: white;
+        margin-bottom: 8px;
+        margin-top: 24px;
+        height: 30px;
+      }
+
+      .card-notification-follow {
+        background-color: $background-color;
+        width: 614px;
+        padding: 24px;
+        border-bottom: 1px solid $light-gray;
+        color: white;
+        .follow-notification {
+          display: flex;
+          float: left;
+          width: 570px;
+          .user-notification {
+            display: flex;
+            float: left;
+            .avatar {
+              width: 45px;
+              height: 45px;
+              border-radius: 50px;
+            }
+
+            .text-notification {
+              display: flex;
+              margin-left: 10px;
+              flex-direction: column;
+              color: #fff;
+              .user-name {
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                line-height: 106.2%;
+              }
+              .time-info {
+                width: 84px;
+                height: 15px;
+                margin-top: 8px;
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #ffffff66;
+              }
+            }
+          }
+
+          .btn-followback {
+            margin-left: auto;
+            width: 120px; //olcunu ozumden yazdim dizayndaki uygun deyildi
+            height: 31px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 16px 8px 16px;
+            background-color: $btn-color;
+            color: white;
+            border-radius: 50px;
+            border: 1px solid $light-gray;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .card-notification-commented {
+        background-color: $background-color;
+        width: 614px;
+        padding: 24px;
+        border-bottom: 1px solid $light-gray;
+        color: white;
+        .comment-notification {
+          display: flex;
+          float: left;
+          width: 570px;
+          .user-notification {
+            display: flex;
+            float: left;
+            .avatar {
+              width: 45px;
+              height: 45px;
+              border-radius: 50px;
+            }
+            .text-notification {
+              display: flex;
+              margin-left: 10px;
+              flex-direction: column;
+              color: #fff;
+              .user-name {
+                h1 {
+                  font-family: Inter;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 106.2%;
+                }
+              }
+
+              .comment {
+                width: 100%;
+                margin-top: 4px;
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: white;
+              }
+              .time-info {
+                width: 84px;
+                height: 15px;
+                margin-top: 8px;
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #ffffff66;
+              }
+            }
+          }
+        }
+      }
+
+      .card-notification-liked {
+        background-color: $background-color;
+        width: 614px;
+        padding: 24px;
+        border-bottom: 1px solid $light-gray;
+        color: white;
+        .liked-notification {
+          display: flex;
+          float: left;
+          width: 570px;
+          .user-notification {
+            display: flex;
+            float: left;
+            .avatar {
+              width: 45px;
+              height: 45px;
+              border-radius: 50px;
+            }
+            .text-notification {
+              display: flex;
+              margin-left: 10px;
+              flex-direction: column;
+              color: #fff;
+
+              .user-name {
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                line-height: 106.2%;
+              }
+              .time-info {
+                width: 84px;
+                height: 15px;
+                margin-top: 8px;
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #ffffff66;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 25%;
+    border-radius: 16px;
+    border-left: 1px solid $light-gray;
+    border-right: 1px solid $light-gray;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    border: 1px solid $light-gray;
+    border-radius: 16px;
+  }
+}

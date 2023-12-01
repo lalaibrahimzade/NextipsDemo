@@ -339,6 +339,7 @@
   border: 1px;
   padding: 12px 16px 12px 16px;
   border-radius: 50px;
+  border: 1px solid rgb(83, 85, 89);
   display: flex;
   float: left;
   align-items: center;
@@ -597,7 +598,7 @@ form input[type=search] {
   z-index: 2222;
   border: 1px solid rgb(83, 85, 89);
   color: white;
-  background-color: rgb(26, 28, 33);
+  background-color: rgb(23, 25, 33);
 }
 .sign-form :focus-visible {
   outline: none;
@@ -712,7 +713,7 @@ form input[type=search] {
   margin-left: auto;
   flex-direction: column;
   color: white;
-  background-color: rgb(26, 28, 33);
+  background-color: rgb(23, 25, 33);
 }
 .sign-form .create-password .step-1 {
   display: flex;
@@ -1059,7 +1060,7 @@ form input[type=search] {
   margin-left: auto;
   flex-direction: column;
   color: white;
-  background-color: rgb(26, 28, 33);
+  background-color: rgb(23, 25, 33);
 }
 .sign-form .login .part-1 {
   display: flex;
@@ -2227,8 +2228,6 @@ form input[type=search] {
 }
 .settings-sec .change-password .pass-input {
   position: relative;
-  display: flex;
-  float: left;
   width: 562px;
   height: 48px;
   margin-bottom: 16px;
@@ -2264,9 +2263,487 @@ form input[type=search] {
 }
 .settings-sec .change-password .pass-input .eye-icon {
   position: absolute;
-  top: 25%;
-  right: 7%;
+  top: 30%;
+  right: 3%;
   width: 20px;
   height: 20px;
   color: rgb(151, 151, 151);
+}
+.settings-sec .change-password .save-btn {
+  width: 567px;
+  height: 44px;
+  background-color: rgb(62, 128, 253);
+  border-radius: 15px;
+  border: none;
+  color: white;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
+}
+.settings-sec .setting-modal {
+  position: absolute;
+  z-index: 999;
+  top: 30% !important;
+  left: 37% !important;
+  width: 365px;
+  height: 281px;
+  top: 323px;
+  left: 508px;
+  border-radius: 16px;
+  gap: 16px;
+  border: 1px solid rgb(83, 85, 89);
+  background: rgb(23, 25, 33);
+  color: white;
+}
+.settings-sec .setting-modal .setting-modal-header {
+  border-bottom: 1px solid rgb(83, 85, 89);
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 16px;
+}
+.settings-sec .setting-modal .setting-modal-header .close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: 1px solid rgb(83, 85, 89);
+  cursor: pointer;
+}
+.settings-sec .setting-modal .setting-modal-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 16px;
+}
+.settings-sec .setting-modal .setting-modal-main .setting-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.settings-sec .setting-modal .setting-modal-main .setting-buttons .modal-btn {
+  display: flex;
+  width: 78px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: rgb(151, 151, 151);
+  border-radius: 50px;
+  padding: var(--3, 12px) var(--4, 16px);
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+}
+.settings-sec .setting-modal .add-password-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 16px;
+}
+.settings-sec .setting-modal .add-password-sec p {
+  color: #fff;
+  text-align: center;
+  opacity: 0.6;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.settings-sec .setting-modal .add-password-sec .pass-input {
+  position: relative;
+  width: 221px;
+  height: 44px;
+  margin-bottom: 16px;
+  border: 1px;
+  gap: 24px;
+}
+.settings-sec .setting-modal .add-password-sec .pass-input .password {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px 6px 10px;
+  width: 221px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid rgb(39, 41, 46);
+  background-color: rgb(39, 41, 46) !important;
+  color: rgb(151, 151, 151);
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 60px;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 106.2%; /* 14.868px */
+}
+.settings-sec .setting-modal .add-password-sec .pass-input .lock {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  width: 20px;
+  height: 20px;
+}
+.settings-sec .setting-modal .add-password-sec .pass-input .eye-icon {
+  position: absolute;
+  top: 30%;
+  right: 3%;
+  width: 20px;
+  height: 20px;
+  color: rgb(151, 151, 151);
+}
+.settings-sec .setting-modal .add-password-sec .deactive-btn {
+  width: 221px;
+  height: 44px;
+  border-radius: 15px;
+  background-color: rgb(62, 128, 253);
+  border: none;
+  color: #fff;
+}
+
+.company {
+  border-left: 1px solid rgb(83, 85, 89);
+  border-right: 1px solid rgb(83, 85, 89);
+  width: 615px;
+  height: 100vh;
+  padding: 20px 29px 16px 24px;
+}
+.company .company-main .company-items {
+  display: flex;
+  float: left;
+  align-items: center;
+  background-color: rgb(39, 41, 46);
+  color: rgb(151, 151, 151);
+  width: 562px;
+  height: 48px;
+  padding: 12px 16px 12px 16px;
+  margin-bottom: 16px;
+  border-radius: 15px;
+  border: 1px;
+  gap: 24px;
+}
+.company .company-main .company-items p {
+  width: 156px;
+  height: 17px;
+  cursor: pointer;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17px;
+  margin-top: 15px;
+  text-align: left;
+}
+.company .report {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(39, 41, 46);
+  color: rgb(151, 151, 151);
+  width: 562px;
+  height: 48px;
+  padding: 12px 16px 12px 16px;
+  margin-bottom: 16px;
+  border-radius: 15px;
+  border: 1px;
+  gap: 24px;
+}
+
+.explore-sec {
+  width: 615px;
+  height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.explore-sec .explore {
+  background-color: rgb(26, 28, 33);
+  width: 614px;
+  margin: 0 auto;
+  padding: 20px 20px 10px 20px;
+  color: white;
+  border-left: 1px solid rgb(83, 85, 89);
+  border-bottom: 1px solid rgb(83, 85, 89);
+}
+.explore-sec .explore .section-up {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.explore-sec .explore .section-up .user-icon {
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.explore-sec .explore .section-up .user {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+}
+.explore-sec .explore .section-up .user .name {
+  font-size: 16px;
+  font-weight: 600;
+}
+.explore-sec .explore .section-up .user .user-name {
+  font-size: 14px;
+  color: rgba(245, 245, 245, 0.582);
+}
+.explore-sec .explore .btn-follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 31px;
+  border-radius: 50px;
+  border: 1px solid rgb(83, 85, 89);
+  background-color: rgb(39, 41, 46) !important;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+.explore-sec .explore .league {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 41, 46);
+  border-radius: 15px;
+  padding: 10px;
+  height: 236px;
+  border: 1px solid rgb(83, 85, 89);
+}
+.explore-sec .explore .league .league-header {
+  width: 564px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.explore-sec .explore .league .league-header .lig-icon {
+  height: 18px;
+  width: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.explore-sec .explore .league .league-header .lig-name {
+  margin-left: 10px;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+  font-size: 14px;
+  line-height: 14.52px;
+}
+.explore-sec .explore .league .league-main {
+  background-color: rgb(33, 35, 40);
+  width: 568px;
+  height: 120px;
+  padding: 10px;
+  align-self: center;
+  margin-bottom: 10px;
+}
+.explore-sec .explore .league .league-main .team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.explore-sec .explore .league .league-main .team .team-icon {
+  background-color: rgb(83, 85, 89);
+  width: 52px;
+  height: 52px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.explore-sec .explore .league .league-main .team .team-name {
+  font-weight: 500;
+  font-size: 13px;
+}
+.explore-sec .explore .league .league-main .team .time-icon {
+  background-color: rgb(83, 85, 89);
+  width: 32px;
+  height: 29px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.explore-sec .explore .league .league-main .team .time {
+  width: 75px;
+  height: 21px;
+  background-color: #333539;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.explore-sec .explore .league .league-main .team .time p {
+  font-size: 12px;
+  font-weight: 600;
+  float: left;
+  margin-left: 5px;
+}
+.explore-sec .explore .league .league-main .team .time .timer-icon {
+  width: 5px;
+  height: 13px;
+  background-color: #4f5155;
+  float: left;
+  border-radius: 50px;
+  margin-top: 4px;
+  margin-left: 3px;
+}
+.explore-sec .explore .league .league-main .time-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.explore-sec .explore .league .league-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 0 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.explore-sec .explore .league .league-footer .score {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.explore-sec .explore .league .league-footer .score p {
+  font-size: 12px;
+  font-weight: 500;
+}
+.explore-sec .explore .league .league-footer .score p.odd-score {
+  color: #51ff4d;
+}
+.explore-sec .explore .section-down {
+  margin: 0 10px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 74px;
+}
+.explore-sec .explore .section-down .icon {
+  float: left;
+  color: rgb(151, 151, 151);
+}
+.explore-sec .explore .section-down .icon i {
+  width: 19px;
+  height: 17px;
+  cursor: pointer;
+}
+.explore-sec .explore .section-down .icon .count {
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.94;
+}
+
+.explore-sec::-webkit-scrollbar {
+  width: 10px;
+  height: 25%;
+  border-radius: 16px;
+  border-left: 1px solid rgb(83, 85, 89);
+  border-right: 1px solid rgb(83, 85, 89);
+}
+
+.explore-sec::-webkit-scrollbar-thumb {
+  background-color: rgb(62, 128, 253);
+  border: 1px solid rgb(83, 85, 89);
+  border-radius: 16px;
+}
+
+.notificationSec {
+  width: 615px;
+  height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.notificationSec .notification .date-notification {
+  width: 615px;
+  height: 71px;
+  display: flex;
+  flex-direction: column;
+}
+.notificationSec .notification .date-notification .date {
+  display: flex;
+  align-items: flex-start;
+  padding: 24px;
+}
+.notificationSec .notification .date-notification .card-notification {
+  background-color: rgb(26, 28, 33);
+  width: 614px;
+  margin: 0 auto;
+  padding: 20px 20px 10px 20px;
+  color: white;
+}
+.notificationSec .notification .date-notification .card-notification .follow-notification {
+  display: flex;
+  float: left;
+  width: 615px;
+  height: 93px;
+}
+.notificationSec .notification .date-notification .card-notification .user-notification {
+  display: flex;
+  float: left;
+}
+.notificationSec .notification .date-notification .card-notification .user-notification .avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+}
+.notificationSec .notification .date-notification .card-notification .user-notification .text-notification {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.notificationSec .notification .date-notification .card-notification .user-notification .text-notification div {
+  flex: 1;
+}
+.notificationSec .notification .date-notification .card-notification .user-notification .text-notification div h1 {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 106.2%;
+}
+.notificationSec .notification .date-notification .card-notification .btn-followback {
+  margin-left: auto;
+  width: 120px;
+  height: 31px;
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px 8px 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  border-radius: 50px;
+  border: 1px solid rgb(83, 85, 89);
+}
+
+.notificationSec::-webkit-scrollbar {
+  width: 10px;
+  height: 25%;
+  border-radius: 16px;
+  border-left: 1px solid rgb(83, 85, 89);
+  border-right: 1px solid rgb(83, 85, 89);
+}
+
+.notificationSec::-webkit-scrollbar-thumb {
+  background-color: rgb(62, 128, 253);
+  border: 1px solid rgb(83, 85, 89);
+  border-radius: 16px;
 }/*# sourceMappingURL=main.css.map */

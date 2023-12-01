@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar-main align-items-center">
-    <div class="parent" v-show="pathname !== '/settings'">
+    <div class="parent" v-show="pathname !== '/settings/account'">
       <div class="child c-first">
         <nuxt-link to="">
           <a href="#" class="me-2 text-light">For You</a>
@@ -18,17 +18,23 @@
         </nuxt-link>
       </div>
     </div>
-    <div class="setting-nav" v-show="pathname === '/settings'">
+    <div class="setting-nav" v-show="pathname === '/settings/account'">
       <div class="setting-links">
         <img src="../assets/image/arrow-left.svg" alt="left arrow icon" />
-        <div class="account" @click="openAccountInformation">
-          <a href="#">Account</a>
+        <div class="account">
+          <nuxt-link to="/settings/account">
+            <a href="#">Account</a>
+          </nuxt-link>
         </div>
         <div class="company-support">
-          <a href="#">Company&Support</a>
+          <nuxt-link to="/settings/company">
+            <a href="#">Company&Support</a>
+          </nuxt-link>
         </div>
         <div class="login-btn">
+          <nuxt-link to="/settings/login">
           <a href="#">Login</a>
+        </nuxt-link>
         </div>
       </div>
       <div class="search-sec">
@@ -39,6 +45,7 @@
 </template>
 
 <script>
+import eventBus from '../plugins/event-bus';
 export default {
   name: "navbar",
   computed: {
@@ -47,8 +54,8 @@ export default {
     },
   },
   methods: {
-    openAccountInformation() {
-      eventBus.$emit("openAccountInformation");
+    openAccountInformation(){
+        eventBus.$emit('settingMain')
     },
   },
 };

@@ -1,0 +1,114 @@
+.news {
+  background-color: $background-color;
+  width: 615px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px 24px 10px 24px;
+  color: white;
+  border-left: 1px solid $light-gray;
+  border-right: 1px solid $light-gray;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .main-news {
+    display: flex;
+    float: left;
+    width: 566px;
+    height: 230px;
+    gap: 18x;
+    justify-content:space-between;
+    .main-img {
+      width: 566px;
+      height: 226px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      img{
+        margin-right: auto;
+      }
+    }
+
+    .main-text {
+      display: flex;
+      flex-direction: column;
+      .text-head {
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.003em;
+        text-align: left;
+        color: #fff;
+      }
+
+      .news-paragraf {
+        width: 258px;
+        height: 156px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0.003em;
+        text-align: left;
+        color: $smoke-white;
+      }
+    }
+  }
+
+  .other-news {
+    width: 566px;
+    height: 100vh;
+    gap: 24px;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 25%;
+      border-radius: 16px;
+      border-left: 1px solid $light-gray;
+      border-right: 1px solid $light-gray;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary-color;
+      border: 1px solid $light-gray;
+      border-radius: 16px;
+    }
+    .news-row {
+      width: 566px;
+      display: flex;
+      float: left;
+      gap: 16px;
+      .news-sec {
+        display: flex;
+        flex-direction: column;
+        width: 178px;
+        height: 174px;
+        .news-img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 107px;
+          padding: 16px;
+          border-radius: 19px;
+          border: 1px;
+          gap: 16px;
+        }
+
+        .news-text {
+          font-family: Inter;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0.003em;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

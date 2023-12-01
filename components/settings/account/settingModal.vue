@@ -13,7 +13,7 @@
      <div class="add-password-sec" v-if="step == 2">
         <p>Add password to confirm</p>
         <div class="pass-input">
-            <img src="../../assets/image/lock.svg" alt="lock icon" class="lock" />
+            <img src="../../../assets/image/lock.svg" alt="lock icon" class="lock" />
             <input
               :type="yourPasswordVisible ? 'text' : 'password'"
               class="password"

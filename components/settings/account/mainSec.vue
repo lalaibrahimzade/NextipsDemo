@@ -2,19 +2,19 @@
     <div>
         <div class="settings-item-main">
             <div class="settings-items" @click="settingMain()">
-              <img src="../../assets/image/settings-avatar.svg" alt="avatar icon">
+              <img src="../../../assets/image/settings-avatar.svg" alt="avatar icon">
               <p>Account information</p>
             </div>
             <div class="settings-items" @click="security()">
-              <img src="../../assets/image/security-icon.svg" alt="avatar icon">
+              <img src="../../../assets/image/security-icon.svg" alt="avatar icon">
               <p>Security and login</p>
             </div>
             <div class="settings-items">
-              <img src="../../assets/image/share-icon.svg" alt="avatar icon">
+              <img src="../../../assets/image/share-icon.svg" alt="avatar icon">
               <p>Share profile</p>
             </div>
             <div class="settings-items">
-              <img src="../../assets/image/insight-icon.svg" alt="avatar icon">
+              <img src="../../../assets/image/insight-icon.svg" alt="avatar icon">
               <p>Insights</p>
             </div>
            </div>
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: "settingMain",
+  name: "mainSec",
   props: ['mainItem'],
   methods: {
     settingMain(param){

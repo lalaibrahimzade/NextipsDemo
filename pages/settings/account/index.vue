@@ -1,13 +1,13 @@
 <template>
     <div>
-        <settings/>
+        <account/>
     </div>
 </template>
 
 <script>
-import settings from '../../components/settings/settings';
+import account from '../../../components/settings/account/account'
 export default {
-components : { settings},
+components : { account},
 data(){
     return{
         

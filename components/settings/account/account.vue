@@ -1,6 +1,6 @@
 <template>
     <div class="settings-sec">
-      <settingMain
+      <mainSec
       :mainItem="mainItem"
       v-if="viewedComponent === 'settingMain'"
       @settingMain="settingMain"
@@ -13,14 +13,14 @@
 </template>
 
 <script>
-import eventBus from '../../plugins/event-bus';
-import settingMain from '../settings/settingMain';
-import accountInfo from '../settings/accountInfo';
-import security from '../settings/security';
-import ChangePassword from './changePassword';
+import eventBus from '../../../plugins/event-bus';
+import mainSec from '../account/mainSec';
+import accountInfo from '../account/accountInfo';
+import security from '../account/security';
+import ChangePassword from '../account/changePassword';
 export default {
-  name: "settings",
-  components: { settingMain, accountInfo, security, ChangePassword },
+  name: "account",
+  components: { mainSec, accountInfo, security, ChangePassword },
   data() {
     return {
       viewedComponent:'settingMain',
@@ -44,6 +44,7 @@ export default {
     eventBus.$on('settingMain', () => {
       this.showSettingsItemMain(true);
     });
+    
   }
 }
 </script>

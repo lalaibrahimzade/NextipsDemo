@@ -1,9 +1,8 @@
 <template>
   <div>
-    <SettingModal v-if="settingModalIsOpen" @close="settingModalIsOpen=false"/>
     <div class="change-password">
       <div class="pass-input">
-        <img src="../../assets/image/lock.svg" alt="lock icon" class="lock" />
+        <img src="../../../assets/image/lock.svg" alt="lock icon" class="lock" />
         <input
           :type="oldPasswordVisible ? 'text' : 'password'"
           class="password"
@@ -17,7 +16,7 @@
         </div>
       </div>
       <div class="pass-input">
-        <img src="../../assets/image/lock.svg" alt="lock icon" class="lock" />
+        <img src="../../../assets/image/lock.svg" alt="lock icon" class="lock" />
         <input
           :type="newPasswordVisible ? 'text' : 'password'"
           class="password"
@@ -31,7 +30,7 @@
         </div>
       </div>
       <div class="pass-input">
-        <img src="../../assets/image/lock.svg" alt="lock icon" class="lock" />
+        <img src="../../../assets/image/lock.svg" alt="lock icon" class="lock" />
         <input
           :type="repeatNewPasswordVisible ? 'text' : 'password'"
           class="password"
@@ -46,30 +45,21 @@
           ></i>
         </div>
       </div>
-      <button class="save-btn" @click="settingModalHandle(true)">Save</button>
+      <button class="save-btn">Save</button>
     </div>
   </div>
 </template>
 
 <script>
-import SettingModal from "./settingModal";
 
 export default {
   name: "changePassword",
-  components: { SettingModal },
   data() {
     return {
-      settingModalIsOpen: false,
       oldPasswordVisible: false,
       newPasswordVisible: false,
       repeatNewPasswordVisible: false,
     };
-  },
-  methods: {
-    settingModalHandle(param){
-        this.settingModalIsOpen=true
-        this.$emit('settingModalOpenned')
-    },
   },
 };
 </script>
