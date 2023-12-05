@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import notificationSec from "../../components/Notifications/notificationSec";
+import notificationSec from "../../components/notifications/notificationSec";
 
 export default {
   components: { notificationSec }

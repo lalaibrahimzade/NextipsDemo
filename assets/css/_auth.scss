@@ -145,15 +145,13 @@
 
 
         .step-1{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %sections_step1;
             
     
             .email-sec{
-                @include sections_step1;
+                @extend %sections_step1;
                 .head-text{
-                    @include head_text;
+                    @extend %head_text;
                 }
             
                 .centered-main{
@@ -164,7 +162,7 @@
                     .pass-input{
                         position: relative;
                         .password{
-                            @include password_step1; 
+                            @extend %password_step1; 
                         }
         
                         .letter{
@@ -174,7 +172,7 @@
                     }
         
                     .continue{
-                        @include continue_btn_step1;
+                        @extend %continue_btn_step1;
                     }
                         
                     a{
@@ -187,7 +185,7 @@
             .phone-sec{
                 @extend .email-sec;
                 .head-text{
-                    @include head_text;
+                    @extend %head_text;
                 }
             
                 .centered-main{
@@ -196,7 +194,7 @@
                     .pass-input{
                         position: relative;
                         .password{
-                            @include password_step1; 
+                            @extend %password_step1; 
                         }
         
                         .phone{
@@ -206,7 +204,7 @@
                     }
         
                     .continue{
-                        @include continue_btn_step1;
+                        @extend %continue_btn_step1;
                     }
                         
                     a{
@@ -251,7 +249,7 @@
                 margin-top: 26px;
                 display: flex;
                 flex-direction: column;
-    
+                justify-content: center;
                 .userInput{
                     .otpinput {
                         border: 1px solid #44464b;
@@ -259,7 +257,7 @@
                         width: 40px;
                         height: 56px;
                         text-align: center;
-                        margin-left: 20px;
+                        margin-left: 25px;
                         margin-right: 20px;
                         font-size: 14px;
                         color: white;

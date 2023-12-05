@@ -1,6 +1,6 @@
 <template>
     <div class="explore-sec">
-      <Explore v-for="coupon in coupons"/>
+      <Explore :key="index" v-for="(coupon,index) in coupons"/>
     </div>
   
   </template>

@@ -1,0 +1,347 @@
+.live {
+  @extend %section-property;
+  .live-countries {
+    @extend %search-country-leauge;
+    .sec-one {
+      margin-left: 12px;
+      justify-content: flex-start;
+      @extend %header-countries-leauge;
+    }
+
+    .sec-main {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 154px;
+      max-height: fit-content;
+      min-height: 184px;
+      background-color: $dark-gray;
+      @extend %search-input;
+
+      .countries-sec {
+        display: flex;
+        justify-content: center;
+        ul {
+          width: 144px;
+          height: 24px;
+          list-style: none;
+          padding: 0;
+          margin: 0 0 0 15px;
+          li {
+            width: 144px;
+            display: flex;
+            float: left;
+            align-items: center;
+            .countries {
+              display: flex;
+              justify-content: space-between;
+              overflow: hidden;
+              align-items: center;
+              .countries-icon {
+                width: 15px;
+                height: 15px;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                  width: 15px;
+                  height: 15px;
+                }
+              }
+
+              h1 {
+                font-family: Inter;
+                font-size: 11px;
+                font-weight: 500;
+                line-height: 12px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .sec-footer {
+      @extend %footer-countries-leauge;
+    }
+  }
+
+  .live-leauges {
+    @extend %search-country-leauge;
+    .sec-one {
+      margin-left: 12px;
+      justify-content: flex-start;
+      @extend %header-countries-leauge;
+    }
+
+    .sec-main {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 154px;
+      max-height: fit-content;
+      min-height: 184px;
+      background-color: $dark-gray;
+      @extend %search-input;
+
+      .leauges-sec {
+        display: flex;
+        justify-content: center;
+        ul {
+          width: 144px;
+          height: 24px;
+          list-style: none;
+          padding: 0;
+          margin: 0 0 0 15px;
+          li {
+            width: 144px;
+            display: flex;
+            float: left;
+            align-items: center;
+            .leauges {
+              display: flex;
+              justify-content: space-between;
+              overflow: hidden;
+              align-items: center;
+              .leauges-icon {
+                width: 15px;
+                height: 15px;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                  width: 15px;
+                  height: 15px;
+                }
+              }
+
+              h1 {
+                font-family: Inter;
+                font-size: 11px;
+                font-weight: 500;
+                line-height: 12px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .sec-footer {
+      @extend %footer-countries-leauge;
+    }
+  }
+
+  .live-leauges-sec {
+    width: 410px;
+    height: 100%;
+    background-color: $gray;
+    color: white;
+    border-radius: 8px;
+    margin-top: 12px;
+    margin-left: 23px;
+
+    .head-couponlig {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 8px;
+      height: 30px;
+      .lig-name {
+        width: 184px;
+        height: 25px;
+        display: flex;
+        margin-left: 12px;
+        justify-content: space-between;
+        .flag {
+          width: 12px;
+          height: 12px;
+        }
+
+        p {
+          font-family: Inter;
+          font-weight: 500;
+          line-height: 13px;
+          letter-spacing: 0em;
+          text-align: left;
+          font-size: 12px;
+        }
+      }
+
+      .pin-icon {
+        margin-bottom: 15px;
+        margin-left: -27%;
+        img {
+          height: 17px;
+          width: 17px;
+        }
+      }
+
+      .toggle {
+        margin-bottom: 15px;
+        margin-left: 10%;
+        margin-right: 12px;
+        img {
+          width: 12.76px;
+          height: 6.18px;
+        }
+      }
+    }
+
+    .lig-card {
+      width: 410px;
+      height: 56px;
+      padding: 4px 0px 4px 14px;
+      display: flex;
+      background-color: $dark-gray;
+      border-bottom: 1px solid $light-gray;
+      &.collapsed {
+        display: none;
+      }
+      .time-sec {
+        margin-right: 14px;
+        display: flex;
+        flex-direction: column;
+        padding: 12px 0px 4px 0px;
+        color: $smoke-white;
+
+        .time {
+          width: 39px;
+          height: 15px;
+          font-family: Inter;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 15px;
+          letter-spacing: 0.003em;
+          text-align: center;
+        }
+
+        .time-part {
+          width: 100%;
+          font-family: Inter;
+          font-size: 9px;
+          font-weight: 500;
+          line-height: 13px;
+          letter-spacing: 0.003em;
+          text-align: center;
+          color: $time-part;
+        }
+      }
+
+      .teams {
+        display: flex;
+        flex-direction: column;
+        min-width: 150px;
+        height: 48px;
+        padding: 0px 0 6px 0;
+        gap: 12px;
+        .team-first {
+          display: flex;
+          height: 15px;
+          .team-head {
+            display: flex;
+            img {
+              margin-top: 8px;
+              width: 15px;
+              height: 15px;
+            }
+
+            h1 {
+              font-family: "Inter", sans-serif;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 15px;
+              letter-spacing: 0.003em;
+              text-align: left;
+              margin-left: 5px;
+            }
+          }
+          .count-team-first {
+            display: flex;
+            float: left;
+            margin-top: 4px;
+            margin-left: 70px;
+            align-items: center;
+            .count-team {
+              font-family: Inter;
+              font-size: 12px;
+              letter-spacing: 0.003em;
+              text-align: center;
+            }
+            .count-teamF {
+              font-family: Inter;
+              font-size: 12px;
+              letter-spacing: 0.003em;
+              text-align: center;
+              margin-left: 17px;
+            }
+          }
+        }
+
+        .team-second {
+          display: flex;
+          height: 15px;
+          align-items: center;
+          .team-head {
+            display: flex;
+            img {
+              margin-top: 8px;
+              width: 15px;
+              height: 15px;
+            }
+
+            h1 {
+              font-family: "Inter", sans-serif;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 15px;
+              letter-spacing: 0.003em;
+              text-align: left;
+              margin-left: 5px;
+            }
+          }
+
+          .count-team-sec {
+            display: flex;
+            float: left;
+            margin-top: 8px;
+            margin-left: 74px;
+            align-items: center;
+            .count-team {
+              font-family: Inter;
+              font-size: 12px;
+              letter-spacing: 0.003em;
+              text-align: center;
+            }
+            .count-teamF {
+              font-family: Inter;
+              font-size: 12px;
+              letter-spacing: 0.003em;
+              text-align: center;
+              margin-left: 19px;
+            }
+          }
+        }
+      }
+
+      .alarm-icon {
+        position: absolute;
+        margin-left: 26.9%;
+        margin-top: 8px;
+        cursor: pointer;
+
+        .alarm-active {
+          color: red;
+        }
+      }
+    }
+  }
+}

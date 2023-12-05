@@ -32,14 +32,14 @@
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/">
+            <nuxt-link to="/save">
               <a href="#">
                 <img src="../assets/image/save.svg" alt="save icon" />
                 <span class="tooltip">Save</span>
               </a>
             </nuxt-link>
           </li>
-          <li @click="addGameHandle(true)">
+          <li>
             <nuxt-link to="/live">
               <a href="#">
                 <img src="../assets/image/live.svg" alt="live-icon" />
@@ -69,12 +69,14 @@
               <span class="tooltip">Home</span>
             </a>
           </li>
-          <li>
+          <li @click="addGameHandle(true)">
+            <nuxt-link to="/addCoupon">
             <a href="#">
               <div class="plus-div">
                 <img src="../assets/image/plus.svg" alt="add icon" />
               </div>
             </a>
+          </nuxt-link>
           </li>
         </ul>
       </nav>

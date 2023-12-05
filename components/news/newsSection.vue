@@ -1,8 +1,8 @@
 <template>
   <div class="news">
     <div class="main-news">
-        <div class="main-img">
-            <img src="../../assets/image/news-1.svg" alt="">
+        <div class="main-img-sec">
+            <img src="../../assets/image/news-1.svg" alt="" class="main-image">
         </div>
         <div class="main-text">
             <div class="text-head">
@@ -45,10 +45,10 @@
 </template>
 <script>
 export default {
-  name: "news",
+  name: "newsSection",
   data() {
     return {
-        data:[1,2,3,4,5,6]
+        data:[1,2,3]
     }
   },
 };

@@ -1,7 +1,6 @@
 <template>
     <div class="settings-sec">
       <mainSec
-      :mainItem="mainItem"
       v-if="viewedComponent === 'settingMain'"
       @settingMain="settingMain"
       @security="security"

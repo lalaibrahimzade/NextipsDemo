@@ -1,71 +1,265 @@
+/////REGISTER AND LOG IN START
 @mixin register_icon($top, $left) {
-    position: absolute;
-    top: $top;
-    left: $left;
-    width: 20px;
-    height: 20px;
+  position: absolute;
+  top: $top;
+  left: $left;
+  width: 20px;
+  height: 20px;
 }
 
-@mixin sections_step1{
-    justify-content: center;
+%sections_step1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+%password_step1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px 0 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: #212328 !important;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 38px;
+}
+
+%continue_btn_step1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  margin-bottom: 10px;
+  width: 241px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid #333539;
+  background-color: rgba(62, 128, 253, 1) !important;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@mixin other_option {
+  width: 169px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  opacity: 60%;
+  margin-left: 40px;
+  .arrow {
+    position: absolute;
+    left: -8%;
+  }
+}
+/////REGISTER AND LOG IN END
+
+////// LIVE AND ADD COUPON START
+%head_text {
+  text-align: center;
+  width: 282px;
+  font-size: 32px;
+  line-height: 33.98px;
+  font-weight: 600;
+  margin-right: 20px;
+  margin-top: 15px !important;
+}
+
+%section-property {
+  display: flex;
+  border-left: 1px solid $light-gray;
+  border-right: 1px solid $light-gray;
+  width: 615px;
+  height: 100vh;
+  padding: 5px 13px 16px 13px;
+}
+
+%search-country-leauge {
+  width: 154px;
+  min-height: 234px;
+  max-height: fit-content;
+  display: flex;
+  background-color: $gray;
+  margin-top: 12px;
+  border-radius: 8px;
+  flex-direction: column;
+  color: white;
+}
+
+%search-input {
+  .search-input {
+    form {
+      .form-control:focus {
+        box-shadow: none;
+        background-color: $gray;
+        border-color: $light-gray;
+        color: #f5f5f5a8;
+      }
+
+      img {
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        left: 15px;
+        top: 13px;
+        color: gray;
+      }
+
+      input[type="search"] {
+        width: 144px;
+        height: 24px;
+        font-size: 12px;
+        background-color: $gray;
+        padding: 10px 24px;
+        margin: 8px 0 8px 8px;
+        display: inline-block;
+        border: 1px solid $gray;
+        border-radius: 50px;
+        box-sizing: border-box;
+        color: $font-color;
+      }
+    }
+  }
+}
+
+%footer-countries-leauge {
+  width: 154px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .arrow-icon {
+    width: 7.76px;
+    height: 3.76px;
+  }
+}
+
+%header-countries-leauge {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.003em;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0.3%;
+  }
+}
+////// LIVE AND ADD COUPON END
+
+////////// POPULAR USERS AND FORECASTERS START
+%pop_forecaster {
+  width: 322px;
+  height: 274px;
+  background-color: $dark-gray;
+  border-top: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+  border-left: 1px solid $light-gray;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  overflow: hidden;
+  margin-right: 8px;
+  color: white;
+  padding: 16px;
+  gap: 16px;
+  border-top-left-radius: 19px;
+  border-bottom-left-radius: 19px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+%head-pop-forecaster {
+  display: flex;
+  align-self: flex-start;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+%profile-details-pop-forecaster {
+  width: 290px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 25px 8px;
+
+  &:hover {
+    background-color: $hover-color;
+    border-radius: 12px;
+  }
+  .avatar {
+    height: 33px;
+    width: 33px;
+    overflow: hidden;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+
+  .user {
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
-}
+    flex: 1;
+    text-align: left;
 
-@mixin password_step1{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 15px 0 10px;
-    margin-right: 15px;
-    margin-bottom: 10px;
-    width: 241px;
-    height: 44px;
-    border-radius: 15px;
-    border: 1px solid #333539;
-    background-color: #212328 !important;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 500;
-    font-size: 14px;
-    padding-left: 38px;
-}
+    .name {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 14.87px;
+    }
 
-@mixin continue_btn_step1{
+    .user-name {
+      font-weight: 400;
+      font-size: 12px;
+      color: rgba(245, 245, 245, 0.582);
+      line-height: 12.74px;
+    }
+  }
+  .btn-follow {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px 0 10px;
-    margin-bottom: 10px;
-    width: 241px;
-    height: 44px;
-    border-radius: 15px;
-    border: 1px solid #333539;
-    background-color: rgba(62, 128, 253, 1) !important;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 500;
-    font-size: 14px;
-}
-
-@mixin head_text {
-    text-align: center;
-    width: 282px;
-    font-size: 32px;
-    line-height: 33.98px;
-    font-weight: 600;
-    margin-right: 20px;
-    margin-top: 15px !important;
-}
-
-@mixin other_option{
-    width: 169px;
-    text-decoration: none;
+    width: 61px;
+    height: 25px;
+    border-radius: 50px;
+    border: 1px solid $light-gray;
+    background-color: $gray !important;
     color: white;
-    position: relative;
-    opacity: 60%;
-    margin-left: 40px;
-    .arrow{
-        position: absolute;
-        left: -8%;
-    }
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12.74px;
+  }
 }
+
+%scrollbar-pop-forecaster {
+  &::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 19px;
+    border-left: 1px solid #333539;
+    border-right: 1px solid #333539;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    height: 25% !important;
+    border: 1px solid #333539;
+    border-radius: 16px;
+  }
+}
+
+////////// POPULAR USERS AND FORECASTERS END

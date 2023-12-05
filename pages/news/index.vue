@@ -1,15 +1,13 @@
 <template>
     <div>
-        <News/>
+       <newsSection/>
     </div>
 </template>
 
 <script>
-import News from '../../components/news/news';
-
-
+import newsSection from '../../components/news/newsSection';
 export default {
-components : { News },
+components : { newsSection },
 
 }
 </script>

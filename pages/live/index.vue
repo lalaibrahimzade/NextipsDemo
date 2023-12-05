@@ -1,26 +1,12 @@
 <template>
-    <div>
-        <addGame/>
-    </div>
+  <div>
+    <live/>
+  </div>
 </template>
 
 <script>
-import addGame from '../../components/addcoupon/addGame';
+import live from '../../components/live/live';
 export default {
-components : { addGame},
-data(){
-    return{
-        
-    }
-},
-
-methods: {
- 
-},
-
-}
+  components: {live},
+};
 </script>
-
-<style scoped>
-
-</style>

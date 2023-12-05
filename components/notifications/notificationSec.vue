@@ -1,6 +1,6 @@
 <template>
   <div class="notification-section">
-    <notification v-for="notification in notifications"/>
+    <notification :key="index" v-for="(notification,index) in notifications"/>
   </div>
 </template>
 

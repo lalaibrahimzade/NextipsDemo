@@ -1,6 +1,6 @@
 <template>
   <div class="coupons">
-    <Coupon v-for="coupon in coupons"/>
+    <Coupon :key="index" v-for="(coupon,index) in coupons" />
   </div>
 
 </template>

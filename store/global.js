@@ -2,14 +2,7 @@ import {mutate} from '~/lib/vuex-helpers/mutations'
 
 export const state = () => ({
   announcementTypes: [],
-  propertyTypes: [],
-  apartmentTypes: [],
-  cities: [],
-  regions:[],
-  villages:[],
-  metro_stations:[],
-  clientTypesForRent:[],
-  searchLocations:[]
+
 
 })
 
