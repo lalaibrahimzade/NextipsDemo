@@ -1,0 +1,137 @@
+.profile {
+  width: 615px;
+  height: 100vh;
+  border-left: 1px solid $light-gray;
+  border-right: 1px solid $light-gray;
+  display: flex;
+  padding: 15px 24px 24px 24px;
+  flex-direction: column;
+  .profile-head {
+    display: flex;
+    flex-direction: column;
+    height: 184px;
+
+    .user-info {
+      display: flex;
+      float: left;
+      margin-bottom: 16px;
+      .user {
+        display: flex;
+        float: left;
+        justify-content: center;
+        align-items: center;
+        .user-avatar {
+          width: 81px;
+          height: 81px;
+          border-radius: 50px;
+          justify-content: center;
+          align-items: center;
+          .avatar {
+            width: 81px;
+            height: 81px;
+          }
+        }
+        .user-name-info {
+          display: flex;
+          flex-direction: column;
+          margin-left: 15px;
+          .user-fullname {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #fff;
+          }
+
+          .user-name {
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $smoke-white;
+          }
+        }
+      }
+      .user-settings {
+        margin-left: auto;
+        display: flex;
+        float: left;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        color: #fff;
+        .edit {
+          width: 41px;
+          height: 41px;
+          border-radius: 50px;
+          display: flex;
+          align-items: center !important;
+          justify-content: center !important;
+          background-color: $gray;
+          cursor: pointer;
+        }
+        .settings {
+          width: 41px;
+          height: 41px;
+          border-radius: 50px;
+          display: flex;
+          align-items: center !important;
+          justify-content: center !important;
+          background-color: $gray;
+          cursor: pointer;
+        }
+      }
+    }
+    .user-profile-btns {
+      display: flex;
+      float: left;
+      gap: 12px;
+      align-self: center;
+      .btn-user {
+        width: 181px;
+        height: 39px;
+        padding: 12px 24px 12px 24px;
+        border-radius: 100px;
+        background-color: $gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .profile-info {
+    width: 615px;
+    height: 49px;
+    padding: 16px 0px 0px 0px;
+    border: 0px 0px 1px 0px;
+    gap: 1px;
+    align-self: center;
+    border-top: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
+    display: flex;
+    float: left;
+
+    .profile-info-sec {
+      width: 204.33px;
+      height: 33px;
+      gap: 16px;
+      color: #fff;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: 0em;
+
+      &:hover {
+        border-bottom: 2px solid $smoke-white;
+      }
+    }
+  }
+}

@@ -221,6 +221,7 @@
       font-size: 14px;
       font-weight: 600;
       line-height: 14.87px;
+      margin-bottom: 4px;
     }
 
     .user-name {
@@ -236,6 +237,7 @@
     align-items: center;
     width: 61px;
     height: 25px;
+    padding: 6px 12px 6px 12px;
     border-radius: 50px;
     border: 1px solid $light-gray;
     background-color: $gray !important;
@@ -263,3 +265,23 @@
 }
 
 ////////// POPULAR USERS AND FORECASTERS END
+
+
+//////NEWS SECTION START
+%news-page{
+  background-color: $background-color;
+  width: 615px;
+  margin: 0 auto;
+  padding: 20px 24px 10px 24px;
+  color: white;
+  border-left: 1px solid $light-gray;
+  border-right: 1px solid $light-gray;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/////NEWS SECTION END

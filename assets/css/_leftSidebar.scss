@@ -19,28 +19,29 @@
         transition: all ease-out 120ms;
         display: flex;
         justify-content: center;
+        align-items: center;
         a {
           text-decoration: none;
           color: white;
-          img {
+          
+          .icon{
+            height: 36px;
+            width: 36px;
+            border-radius: 50px;
             transition: all ease 450ms;
-            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
-
           .plus-div {
             height: 36px;
             width: 36px;
-            margin-right: 10px;
             background-color: $primary-color;
             border-radius: 50px;
             transition: all ease 450ms;
             display: flex;
             justify-content: center;
             align-items: center;
-
-            img {
-              margin-left: 10px;
-            }
           }
 
           .tooltip {
@@ -49,8 +50,8 @@
             background-color: black;
             padding: 8px 15px;
             border-radius: 15px;
-            margin-top: -5px;
-            left: 215px;
+            margin-top: -33px;
+            left: 228px;
             opacity: 0;
             visibility: hidden;
             font-size: 13px;

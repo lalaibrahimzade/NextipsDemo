@@ -1,5 +1,6 @@
 .live {
   @extend %section-property;
+  font-family: 'Inter', sans-serif;
   .live-countries {
     @extend %search-country-leauge;
     .sec-one {
@@ -40,7 +41,7 @@
               .countries-icon {
                 width: 15px;
                 height: 15px;
-                border-radius: 20px;
+                border-radius: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -110,7 +111,7 @@
               .leauges-icon {
                 width: 15px;
                 height: 15px;
-                border-radius: 20px;
+                border-radius: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;

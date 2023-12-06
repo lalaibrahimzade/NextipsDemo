@@ -2,7 +2,9 @@
     
     <div class="card-coupon">
         <div class="section-up">
-            <img src="../../assets/image/avatar.svg" alt="avatar" class="user-icon">
+            <div class="user-icon">
+                <img src="../../assets/image/avatar.svg" alt="avatar">
+            </div>
             <div class="user">
                 <div class="name">Narmin Abbasli</div>
                 <div class="user-name">@narminabbasli</div>
@@ -10,7 +12,7 @@
             <button class="btn-follow">Follow</button>
         </div>
         <div class="centered">
-            <p>This match will be amazing, guys. Follow me for the most exact predictions! <strong>#newmatch</strong> <strong>#premiereleague</strong>  ... <span style="margin-left: 46%; font-weight: 600;">More</span></p>
+            <p>This match will be amazing, guys. Follow me for the most exact predictions! <strong>#newmatch</strong> <strong>#premiereleague</strong>  ... <span class="more">More</span></p>
         </div>
         <div class="league">
             <div class="league-header">

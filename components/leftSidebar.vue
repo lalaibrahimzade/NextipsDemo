@@ -7,7 +7,9 @@
           <li>
             <nuxt-link to="/">
               <a href="#">
-                <img src="../assets/image/home.svg" alt="home-icon" />
+                <div class="icon">
+                  <img src="../assets/image/home.svg" alt="home-icon" />
+                </div>
                 <span class="tooltip">Home</span>
               </a>
             </nuxt-link>
@@ -15,7 +17,9 @@
           <li>
             <nuxt-link to="/explore">
               <a href="#">
-                <img src="../assets/image/explore.svg" alt="home-icon" />
+                <div class="icon">
+                  <img src="../assets/image/explore.svg" alt="home-icon" />
+                </div>
                 <span class="tooltip">Explore</span>
               </a>
             </nuxt-link>
@@ -23,10 +27,12 @@
           <li>
             <nuxt-link to="/notification">
               <a href="#">
-                <img
-                  src="../assets/image/notifications.svg"
-                  alt="notification icon"
-                />
+                <div class="icon">
+                  <img
+                    src="../assets/image/notifications.svg"
+                    alt="notification icon"
+                  />
+                </div>
                 <span class="tooltip">Notifications</span>
               </a>
             </nuxt-link>
@@ -34,7 +40,9 @@
           <li>
             <nuxt-link to="/save">
               <a href="#">
-                <img src="../assets/image/save.svg" alt="save icon" />
+                <div class="icon">
+                  <img src="../assets/image/save.svg" alt="save icon" />
+                </div>
                 <span class="tooltip">Save</span>
               </a>
             </nuxt-link>
@@ -42,7 +50,9 @@
           <li>
             <nuxt-link to="/live">
               <a href="#">
-                <img src="../assets/image/live.svg" alt="live-icon" />
+                <div class="icon">
+                  <img src="../assets/image/live.svg" alt="live-icon" />
+                </div>
                 <span class="tooltip">Live</span>
               </a>
             </nuxt-link>
@@ -50,7 +60,9 @@
           <li>
             <nuxt-link to="/news">
               <a href="#">
-                <img src="../assets/image/list.svg" alt="list-icon" />
+                <div class="icon">
+                  <img src="../assets/image/list.svg" alt="list-icon" />
+                </div>
                 <span class="tooltip">News</span>
               </a>
             </nuxt-link>
@@ -58,25 +70,30 @@
           <li @click="showSettingsItemMain(true)">
             <nuxt-link to="/settings/account">
               <a href="#">
-                <i class="fa-solid fa-gear"></i>
+                <div class="icon">
+                  <i class="fa-solid fa-gear"></i>
+                </div>
                 <span class="tooltip">Settings</span>
               </a>
             </nuxt-link>
           </li>
           <li @click="authModalHandle(true)">
             <a href="#">
-              <img src="../assets/image/avatar.svg" alt="avatar" />
-              <span class="tooltip">Home</span>
+              <div class="icon">
+                <img src="../assets/image/avatar.svg" alt="avatar" />
+              </div>
+              <span class="tooltip">Profile</span>
             </a>
           </li>
           <li @click="addGameHandle(true)">
             <nuxt-link to="/addCoupon">
-            <a href="#">
-              <div class="plus-div">
-                <img src="../assets/image/plus.svg" alt="add icon" />
-              </div>
-            </a>
-          </nuxt-link>
+              <a href="#">
+                <div class="plus-div">
+                  <img src="../assets/image/plus.svg" alt="add icon" />
+                </div>
+                <span class="tooltip">Add</span>
+              </a>
+            </nuxt-link>
           </li>
         </ul>
       </nav>

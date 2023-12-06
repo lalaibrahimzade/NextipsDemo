@@ -2,6 +2,7 @@
 @import '../css/mixins';
 
 .addGame{
+    font-family: 'Inter', sans-serif;
     @extend %section-property;
     .countries{
         @extend %search-country-leauge;

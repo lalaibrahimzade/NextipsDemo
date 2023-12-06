@@ -2,7 +2,9 @@
     <template>
     <div class="explore">
             <div class="section-up">
-                <img src="../../assets/image/avatar.svg" alt="avatar" class="user-icon">
+                <div class="user-icon">
+                 <img src="../../assets/image/avatar.svg" alt="avatar">
+                </div>
                 <div class="user">
                     <div class="name">Narmin Abbasli</div>
                     <div class="user-name">@narminabbasli</div>

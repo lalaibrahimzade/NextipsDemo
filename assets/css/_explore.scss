@@ -22,11 +22,11 @@
       overflow: hidden;
       margin-bottom: 16px;
       .user-icon {
-        height: 40px;
-        width: 40px;
-        overflow: hidden;
+        height: 45px;
+        width: 45px;
+        border-radius: 50px;
         display: flex;
-        align-items: center;
+        justify-content: center;
       }
 
       .user {
@@ -35,6 +35,7 @@
         flex-direction: column;
         flex: 1;
         text-align: left;
+        font-family: 'Inter', sans-serif;
 
         .name {
           font-size: 16px;
@@ -52,6 +53,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      font-family: 'Inter', sans-serif;
       width: 75px;
       height: 31px;
       border-radius: 50px;
@@ -93,6 +95,7 @@
           text-align: left;
           font-size: 14px;
           line-height: 14.52px;
+          font-family: 'Inter', sans-serif;
         }
       }
 
@@ -122,6 +125,7 @@
           .team-name {
             font-weight: 500;
             font-size: 13px;
+            font-family: 'Inter', sans-serif;
           }
 
           .time-icon {
@@ -143,8 +147,12 @@
             border-radius: 5px;
             margin-top: 20px;
             margin-bottom: 10px;
+            position: relative;
             p {
-              font-size: 12px;
+              position: absolute;
+              font-size: 10px;
+              left: 10px;
+              top: 3px;
               font-weight: 600;
               float: left;
               margin-left: 5px;
@@ -179,6 +187,7 @@
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+          font-family: 'Inter', sans-serif;
           p {
             font-size: 12px;
             font-weight: 500;
