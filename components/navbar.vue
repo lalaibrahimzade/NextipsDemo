@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="setting-nav" v-show="pathname === '/settings/account'">
-      <div class="setting-links">
+      <div class="setting-links" :class="{ 'hidden': hideSettingLinks }">
         <img src="../assets/image/arrow-left.svg" alt="left arrow icon" />
         <div class="account">
           <nuxt-link to="/settings/account">
@@ -37,7 +37,8 @@
         </nuxt-link>
         </div>
       </div>
-      <div class="search-sec">
+        <input type="text" class="searchbar-input-nav" :class="{ 'hidden': !hideSettingLinks }" placeholder="Search something...">
+      <div class="search-sec" @click="toggleSettingLinksClass">
         <img src="../assets/image/search.svg" alt="search icon" />
       </div>
     </div>
@@ -48,6 +49,11 @@
 import eventBus from '../plugins/event-bus';
 export default {
   name: "navbar",
+  data() {
+    return {
+      hideSettingLinks: false,
+    };
+  },
   computed: {
     pathname() {
       return this.$route.path;
@@ -56,6 +62,10 @@ export default {
   methods: {
     openAccountInformation(){
         eventBus.$emit('settingMain')
+    },
+    toggleSettingLinksClass() {
+      this.hideSettingLinks = !this.hideSettingLinks;
+      console.log(this.hideSettingLinks)
     },
   },
 };
