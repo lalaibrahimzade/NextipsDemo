@@ -67,16 +67,6 @@
               </a>
             </nuxt-link>
           </li>
-          <li @click="showSettingsItemMain(true)">
-            <nuxt-link to="/settings/account">
-              <a href="#">
-                <div class="icon">
-                  <i class="fa-solid fa-gear"></i>
-                </div>
-                <span class="tooltip">Settings</span>
-              </a>
-            </nuxt-link>
-          </li>
           <li @click="authModalHandle(true)">
             <a href="#">
               <div class="icon">
@@ -120,9 +110,7 @@ export default {
     addGameHandle() {
       eventBus.$emit("liveItemClick");
     },
-    showSettingsItemMain() {
-      eventBus.$emit("settingMain");
-    },
+   
   },
 };
 </script>

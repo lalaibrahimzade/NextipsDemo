@@ -16,11 +16,19 @@
           </div>
         </div>
         <div class="user-settings">
-          <div class="edit">
-            <i class="fa-solid fa-pen"></i>
+          <div class="edit setting-sec-icon" @click="showSettingsItemMain(true)">
+            <nuxt-link to="">
+              <a href="#">
+                <i class="fa-solid fa-pen"></i>
+              </a>
+            </nuxt-link>
           </div>
-          <div class="settings">
-            <i class="fa-solid fa-gear"></i>
+          <div class="settings setting-sec-icon" @click="showSettingsItemMain(true)">
+            <nuxt-link to="/settings/account">
+              <a href="#">
+                <i class="fa-solid fa-gear"></i>
+              </a>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -37,4 +45,14 @@
     </div>
   </div>
 </template>
-<script></script>
+<script>
+import eventBus from "~/plugins/event-bus";
+export default{
+  name:"profile",
+  methods: {
+    showSettingsItemMain() {
+      eventBus.$emit("settingMain");
+    },
+  },
+}
+</script>

@@ -64,7 +64,7 @@
         justify-content: center;
         gap: 18px;
         color: #fff;
-        .edit {
+        .setting-sec-icon {
           width: 41px;
           height: 41px;
           border-radius: 50px;
@@ -73,16 +73,10 @@
           justify-content: center !important;
           background-color: $gray;
           cursor: pointer;
-        }
-        .settings {
-          width: 41px;
-          height: 41px;
-          border-radius: 50px;
-          display: flex;
-          align-items: center !important;
-          justify-content: center !important;
-          background-color: $gray;
-          cursor: pointer;
+          a{
+            text-decoration: none;
+            color: #fff;
+          }
         }
       }
     }
