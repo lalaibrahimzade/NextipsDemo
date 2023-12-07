@@ -1,119 +1,113 @@
 .navbar-main {
-    display: flex !important;
-    justify-content: space-around;
-    width: 615px;
-    height: 81px;
-    background-color: $dark-gray;
-    border: 1px solid $light-gray;
+  display: flex !important;
+  justify-content: space-around;
+  width: 615px;
+  height: 81px;
+  background-color: $dark-gray;
+  border: 1px solid $light-gray;
 
-  .parent{
+  .parent {
     .child {
-        border: 1px solid $light-gray;
-        background-color: $gray;
-        border-radius: 50px;
-        display: inline-block;
-        padding-top: 8px;
-        color: aliceblue !important;
+      border: 1px solid $light-gray;
+      background-color: $gray;
+      border-radius: 50px;
+      display: inline-block;
+      padding-top: 8px;
+      color: aliceblue !important;
     }
 
     .child a {
-        text-decoration: none;
-        color: rgba(240, 248, 255, 0.5);
+      text-decoration: none;
+      color: rgba(240, 248, 255, 0.5);
     }
 
     .c-first {
-        width: 187px;
-        height: 41px;
-        margin-right: 5px;
+      width: 187px;
+      height: 41px;
+      margin-right: 5px;
     }
 
     .c-second {
-        width: 124px;
-        height: 41px;
-        margin-left: 5px;
+      width: 124px;
+      height: 41px;
+      margin-left: 5px;
     }
   }
 
-  .setting-nav{
+  .setting-nav {
     display: flex;
     justify-content: space-between;
     gap: 132px;
 
-   .setting-links{
-    &.hidden {
-        display: none;
-        width: 0;
-        height: 0;
-    }   
-    transition: width 0.5s, max-width 0.5s;
-    background-color: $gray;
-    width: 381px;
-    height: 48px;
-    margin-right: 180px;
-    font-weight: 500;
-    border: 1px;
-    padding: 12px 16px 12px 16px;
-    border-radius: 50px;
-    border: 1px solid $light-gray;
-    display: flex;
-    float: left;
-    align-items: center;
-    gap: 24px;
-
-    img {
-        width: 16px;
-        height: 16px;
-    }
-
-    a{
-        text-decoration: none;
-        color: $smoke-white;
-
-        &:hover{
-            color: white;
+    .main-div {
+        background-color: $gray;
+        display: flex;
+        align-items: center;
+        float: left;
+        width: 381px;
+        height: 48px;
+        margin-right: 180px;
+        border: 1px solid $light-gray;
+        padding: 12px 16px 12px 16px;
+        transition: width ease-in-out 0.3s, margin ease-in-out 0.3s;
+        border-radius: 50px;
+        &.changed-styles{
+            width: 460px;
+            margin-right: 100px;
+            transition:  width ease-in-out 0.3s, margin ease-in-out 0.3s;
         }
+      .setting-links {
+        &.hidden {
+          display: none;
+        }
+        font-weight: 500;
+        display: flex;
+        float: left;
+        align-items: center;
+        gap: 24px;
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+
+        a {
+          text-decoration: none;
+          color: $smoke-white;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+
+      .searchbar-input-nav {
+        outline: none;
+        background-color: $gray;
+        font-weight: 500;
+        color: $smoke-white;
+        border: 1px;
+        display: flex;
+        float: left;
+        align-items: center;
+        gap: 24px;
+        &.hidden {
+          display: none;
+        }
+      }
     }
 
-   }
-
-   .searchbar-input-nav{
-    transition: width 0.5s, max-width 0.5s;
-    outline: none;
-    background-color: $gray;
-    margin-right: 110px;
-    width: 450px;
-    height: 48px;
-    font-weight: 500;
-    color: $smoke-white;
-    border: 1px;
-    padding: 12px 16px 12px 16px;
-    border-radius: 50px;
-    border: 1px solid $light-gray;
-    display: flex;
-    float: left;
-    align-items: center;
-    gap: 24px;
-    &.hidden {
-        display: none;
-        width: 0;
-        height: 0;
+    .search-sec {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 58.8%;
+      background-color: $gray;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      cursor: pointer;
     }
-   }
-
-   .search-sec{
-    transition: width 0.5s;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 58.8%;
-    background-color: $gray;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    cursor: pointer;
-   }
   }
 }
-
-

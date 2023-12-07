@@ -19,25 +19,34 @@
       </div>
     </div>
     <div class="setting-nav" v-show="pathname === '/settings/account'">
-      <div class="setting-links" :class="{ 'hidden': hideSettingLinks }">
-        <img src="../assets/image/arrow-left.svg" alt="left arrow icon" />
-        <div class="account">
-          <nuxt-link to="/settings/account">
-            <a href="#">Account</a>
-          </nuxt-link>
+        <div class="main-div" :class="{ 'changed-styles': stylesChanged }">
+          <div v-show="hideSettingLinks">
+            <input
+              type="text"
+              class="searchbar-input-nav"
+              :class="{ hidden: !hideSettingLinks }"
+              placeholder="Search something..."
+            />
+          </div>
+        <div class="setting-links" :class="{ hidden: hideSettingLinks }" style="transform: none;">
+          <img src="../assets/image/arrow-left.svg" alt="left arrow icon" />
+          <div class="account">
+            <nuxt-link to="/settings/account">
+              <a href="#">Account</a>
+            </nuxt-link>
+          </div>
+          <div class="company-support">
+            <nuxt-link to="/settings/company">
+              <a href="#">Company&Support</a>
+            </nuxt-link>
+          </div>
+          <div class="login-btn">
+            <nuxt-link to="/settings/login">
+              <a href="#">Login</a>
+            </nuxt-link>
+          </div>
         </div>
-        <div class="company-support">
-          <nuxt-link to="/settings/company">
-            <a href="#">Company&Support</a>
-          </nuxt-link>
         </div>
-        <div class="login-btn">
-          <nuxt-link to="/settings/login">
-          <a href="#">Login</a>
-        </nuxt-link>
-        </div>
-      </div>
-        <input type="text" class="searchbar-input-nav" :class="{ 'hidden': !hideSettingLinks }" placeholder="Search something...">
       <div class="search-sec" @click="toggleSettingLinksClass">
         <img src="../assets/image/search.svg" alt="search icon" />
       </div>
@@ -46,12 +55,13 @@
 </template>
 
 <script>
-import eventBus from '../plugins/event-bus';
+import eventBus from "../plugins/event-bus";
 export default {
   name: "navbar",
   data() {
     return {
       hideSettingLinks: false,
+      stylesChanged: false,
     };
   },
   computed: {
@@ -60,15 +70,18 @@ export default {
     },
   },
   methods: {
-    openAccountInformation(){
-        eventBus.$emit('settingMain')
+    openAccountInformation() {
+      eventBus.$emit("settingMain");
     },
     toggleSettingLinksClass() {
-      this.hideSettingLinks = !this.hideSettingLinks;
-      console.log(this.hideSettingLinks)
+      this.hideSettingLinks = !this.hideSettingLinks; 
+      this.stylesChanged = !this.stylesChanged;
+      console.log(this.hideSettingLinks);
     },
   },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

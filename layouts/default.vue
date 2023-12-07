@@ -7,11 +7,11 @@
          <LeftSidebar @authModalOpenned="authModalOpenned"/>
         </div>
         <div class="col">
-          <Navbar></Navbar>
+          <Navbar/>
           <Nuxt/>
         </div>
         <div class="col">
-          <RightSidebar></RightSidebar>
+          <RightSidebar/>
         </div>
       </div>
 
