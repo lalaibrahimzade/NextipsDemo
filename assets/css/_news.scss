@@ -83,7 +83,7 @@
         a{
           text-decoration: none;
           .news-text {
-            font-family: 'Inter', sans-serif;
+            font-family: Inter;
             font-size: 16px;
             line-height: 22px;
             letter-spacing: 0.003em;
@@ -123,12 +123,27 @@
   }
 
   .news-detail-text{
+    overflow-y: scroll;
     display: flex;
     justify-content: center;
     text-align: left;
     margin-left: 10px;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 25%;
+      border-radius: 16px;
+      border-left: 1px solid $light-gray;
+      border-right: 1px solid $light-gray;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary-color;
+      border: 1px solid $light-gray;
+      border-radius: 16px;
+    }
 
   }
 }

@@ -8,11 +8,7 @@
 import addGame from '../../components/addcoupon/addGame';
 export default {
 components : { addGame},
-data(){
-    return{
-        
-    }
-},
+
 
 methods: {
  

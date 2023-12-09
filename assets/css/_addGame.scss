@@ -704,28 +704,32 @@
                     }
         
                    
-                    .time{
+                    .time {
                         width: 75px;
                         height: 21px;
                         background-color: #333539;
                         border-radius: 5px;
                         margin-top: 20px;
                         margin-bottom: 10px;
-                        p{
-                            font-size: 12px;
-                            font-weight: 600;
-                            float: left;
-                            margin-left: 5px;
+                        position: relative;
+                        p {
+                          position: absolute;
+                          font-size: 10px;
+                          left: 10px;
+                          top: 3px;
+                          font-weight: 600;
+                          float: left;
+                          margin-left: 5px;
                         }
-                    
+            
                         .timer-icon {
-                            width: 5px;
-                            height: 13px;
-                            background-color: #4f5155;
-                            float: left;
-                            border-radius: 50px;
-                            margin-top: 4px;
-                            margin-left: 3px;
+                          width: 5px;
+                          height: 13px;
+                          background-color: #4f5155;
+                          float: left;
+                          border-radius: 50px;
+                          margin-top: 4px;
+                          margin-left: 3px;
                         }
                     }
                 }

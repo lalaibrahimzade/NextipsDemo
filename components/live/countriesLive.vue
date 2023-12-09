@@ -73,8 +73,6 @@
 <script>
 export default {
   name: "countriesLive",
-
-  methods: {},
 };
 </script>
 

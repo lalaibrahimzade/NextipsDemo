@@ -1,6 +1,6 @@
 <template>
   <div>
-    <auth v-if="authModalIsOpen" @close="authModalIsOpen = false" />
+    <auth v-if="authModalIsOpen" @close="authModalClose()"/>
     <div class="sidebar">
       <nav class="sidebar-navigation">
         <ul>
@@ -107,10 +107,13 @@ export default {
       this.authModalIsOpen = true;
       this.$emit("authModalOpenned");
     },
+    authModalClose(param){
+      this.authModalIsOpen = false;
+      this.$emit("authModalIsClosed")
+    },
     addGameHandle() {
       eventBus.$emit("liveItemClick");
     },
-   
   },
 };
 </script>

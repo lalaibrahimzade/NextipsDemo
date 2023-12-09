@@ -4,17 +4,11 @@
       <img src="../assets/image/logo.svg" alt="logo" class="logo">
     </div>
   </div>
-
-  
 </template>
 
 <script>
-
-
 export default {
   name: "header",
-  
-
 }
 </script>
 

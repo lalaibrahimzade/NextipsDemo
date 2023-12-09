@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div class="sign-form">
       <div class="head-section">
          <div class="head-main">
@@ -19,7 +18,7 @@
           <p>Click “Sign Up” to agree to Nextips’ Terms of Service and acknowledge that Nextips’ Privacy Policy applies to you.</p>
       </div>
   </div>
-  </div>
+
 
 </template>
 
@@ -63,8 +62,10 @@ export default {
       this.authType=true
       this.signUpWith=null
       this.signInWith=null
-    }
-
+    },
+    closeOverlay() {
+    this.$emit('close');
+  },
   }
 }
 </script>

@@ -1,24 +1,25 @@
 <template>
-<div class="default" :class="authModalOpenned ? 'blur' : null">
-  <HeaderSection/>
-  <div class="container text-center">
+ <div>
+  <div class="default" :class="{ 'blur': authModalIsOpen}">
+    <div class="overlay" v-if="authModalIsClosed"></div>
+    <HeaderSection />
+    <div class="container text-center" >
       <div class="row">
         <div class="col">
-         <LeftSidebar @authModalOpenned="authModalOpenned"/>
+          <LeftSidebar @authModalOpenned="authModalOpenned" @authModalIsClosed="authModalIsClosed"/>
         </div>
         <div class="col">
-          <Navbar/>
-          <Nuxt/>
+          <Navbar />
+          <Nuxt />
         </div>
         <div class="col">
-          <RightSidebar/>
+          <RightSidebar />
         </div>
       </div>
-
+    </div>
+    <FooterSection />
   </div>
-
-  <FooterSection/>
-</div>
+ </div>
 </template>
 
 <script>
@@ -30,26 +31,55 @@ import RightSidebar from '../components/rightSidebar';
 
 export default {
   name: "default",
-  components: {FooterSection, HeaderSection, Navbar, LeftSidebar, RightSidebar},
-data(){
-  return{
-    authModalIsOpen:false,
-  }
-},
-  methods: {
-    authModalOpenned(){
-      this.authModalOpenned=true
-    },
-
+  components: { FooterSection, HeaderSection, Navbar, LeftSidebar, RightSidebar},
+  data() {
+    return {
+      authModalIsOpen: false,
+    };
   },
-}
+  methods: {
+    authModalOpenned() {
+      this.authModalIsOpen = true;
+      console.log(this.authModalIsOpen);
+    },
+    authModalIsClosed(){
+      this.authModalIsOpen = false;
+      console.log(this.authModalIsOpen);
+    }
+  },
+};
 </script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-*{
+* {
   font-family: 'Inter', sans-serif;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgb(128, 128, 128, 0.6) ;
+  z-index: 1000;
+  display: none;
+
+}
+
+
+
+.blur {
+  background-color: rgba(26, 28, 33, 1);
+}
+
+.default {
+  min-width: 100vh;
+  background-color: rgba(26, 28, 33, 1);
+}
+.blur .overlay {
+  display: block;
+}
 </style>
