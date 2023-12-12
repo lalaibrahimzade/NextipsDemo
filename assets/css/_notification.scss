@@ -1,23 +1,22 @@
 .notification-section {
-  width: 615px;
+  width: 100%;
   height: 140vh;
   overflow: scroll;
   overflow-x: hidden;
   border-left: 1px solid $light-gray;
-  padding: 15px 24px 24px 24px;
   .notification {
     display: flex;
     align-items: center;
     justify-content: center;
     .date-notification {
-      width: 615px;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
       .date {
         display: flex;
-        padding: 0 24px 0 24px;
+        padding: 0 20px 0 20px;
         color: white;
         margin-bottom: 8px;
         margin-top: 24px;
@@ -27,7 +26,7 @@
 
       .card-notification-follow {
         background-color: $background-color;
-        width: 614px;
+        width: 100%;
         padding: 24px;
         border-bottom: 1px solid $light-gray;
         font-family: 'Inter', sans-serif;
@@ -35,7 +34,7 @@
         .follow-notification {
           display: flex;
           float: left;
-          width: 570px;
+          width: 100%;
           .user-notification {
             display: flex;
             float: left;
@@ -91,14 +90,14 @@
 
       .card-notification-commented {
         background-color: $background-color;
-        width: 614px;
+        width: 100%;
         padding: 24px;
         border-bottom: 1px solid $light-gray;
         color: white;
         .comment-notification {
           display: flex;
           float: left;
-          width: 570px;
+          width: 100%;
           .user-notification {
             display: flex;
             float: left;
@@ -152,14 +151,14 @@
 
       .card-notification-liked {
         background-color: $background-color;
-        width: 614px;
+        width: 100%;
         padding: 24px;
         border-bottom: 1px solid $light-gray;
         color: white;
         .liked-notification {
           display: flex;
           float: left;
-          width: 570px;
+          width: 100%;
           .user-notification {
             display: flex;
             float: left;

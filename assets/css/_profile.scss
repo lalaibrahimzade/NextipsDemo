@@ -1,16 +1,15 @@
 .profile {
-  width: 615px;
+  width: 100%;
   height: 100vh;
   border-left: 1px solid $light-gray;
   border-right: 1px solid $light-gray;
   display: flex;
-  padding: 15px 24px 24px 24px;
   flex-direction: column;
   .profile-head {
     display: flex;
     flex-direction: column;
     height: 184px;
-
+    padding: 15px 24px 24px 24px;
     .user-info {
       display: flex;
       float: left;
@@ -86,7 +85,7 @@
       gap: 12px;
       align-self: center;
       .btn-user {
-        width: 181px;
+        width: 161px;
         height: 39px;
         padding: 12px 24px 12px 24px;
         border-radius: 100px;
@@ -101,10 +100,9 @@
   }
 
   .profile-info {
-    width: 615px;
+    width: 100%;
     height: 49px;
     padding: 16px 0px 0px 0px;
-    border: 0px 0px 1px 0px;
     gap: 1px;
     align-self: center;
     border-top: 1px solid $light-gray;
@@ -112,19 +110,24 @@
     display: flex;
     float: left;
 
+
     .profile-info-sec {
-      width: 204.33px;
+      width: 100%;
       height: 33px;
       gap: 16px;
       color: #fff;
-      font-family: Inter;
+      font-family: 'Inter', sans-serif;
       font-size: 16px;
       font-weight: 500;
       line-height: 17px;
       letter-spacing: 0em;
+      padding-bottom: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:hover {
-        border-bottom: 2px solid $smoke-white;
+        border-bottom: 1px solid $smoke-white;
       }
     }
   }

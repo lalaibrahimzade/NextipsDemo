@@ -9,11 +9,6 @@
                 <div class="pin-icon">
                     <img src="../../assets/image/pin-icon.svg" alt="pin icon">
                 </div>
-                <div class="coefficient-sections">
-                    <p class="part-one">1</p>
-                     <p class="icon">x</p>
-                    <p class="part-two">2</p>
-                </div>
             </div>
             <div class="lig-card"  v-for="card in cards" @click="gameOption()">
                 <div class="time-sec">
@@ -25,14 +20,12 @@
                             <img src="../../assets/image/dinamo-kiev.svg" alt="team icon">
                         <h1>Dinamo Kiev</h1>
                         </div>
-                        <p>-</p>
                     </div>
                     <div class="team-second">
                        <div class="team-head">
                         <img src="../../assets/image/dnipro.svg" alt="team icon">
                         <h1>Dnipro-1 SK</h1>
                        </div>
-                       <p>-</p>
                     </div>
                 </div>
                 <div class="coefficient">

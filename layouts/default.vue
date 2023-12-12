@@ -3,16 +3,16 @@
   <div class="default" :class="{ 'blur': authModalIsOpen}">
     <div class="overlay" v-if="authModalIsClosed"></div>
     <HeaderSection />
-    <div class="container text-center" >
+    <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-2">
           <LeftSidebar @authModalOpenned="authModalOpenned" @authModalIsClosed="authModalIsClosed"/>
         </div>
-        <div class="col">
+        <div class="col-6">
           <Navbar />
           <Nuxt />
         </div>
-        <div class="col">
+        <div class="col-4">
           <RightSidebar />
         </div>
       </div>
@@ -76,7 +76,6 @@ export default {
 }
 
 .default {
-  min-width: 100vh;
   background-color: rgba(26, 28, 33, 1);
 }
 .blur .overlay {

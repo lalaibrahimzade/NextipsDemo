@@ -2,7 +2,7 @@
 .settings-sec {
   border-left: 1px solid $light-gray;
   border-right: 1px solid $light-gray;
-  width: 615px;
+  width: 100%;
   height: 140vh;
   padding: 20px 29px 16px 24px;
   font-family: 'Inter', sans-serif;
@@ -13,7 +13,7 @@
       align-items: center;
       background-color: $gray;
       color: $smoke-white;
-      width: 562px;
+      width: 100%;
       height: 48px;
       padding: 12px 16px 12px 16px;
       margin-bottom: 16px;
@@ -42,7 +42,7 @@
       align-items: center;
       background-color: $gray;
       color: $smoke-white;
-      width: 562px;
+      width: 100%;
       height: 48px;
       padding: 12px 16px 12px 16px;
       margin-bottom: 16px;
@@ -62,7 +62,7 @@
       }
     }
     .send-btn {
-      width: 567px;
+      width: 100%;
       height: 44px;
       background-color: $primary-color;
       border-radius: 15px;
@@ -81,7 +81,7 @@
     align-items: center;
     background-color: $gray;
     color: $smoke-white;
-    width: 562px;
+    width: 100%;
     height: 48px;
     padding: 12px 16px 12px 16px;
     margin-bottom: 16px;
@@ -156,7 +156,7 @@
   .change-password {
     .pass-input {
       position: relative;
-      width: 562px;
+      width: 100%;
       height: 48px;
       margin-bottom: 16px;
       border: 1px;
@@ -167,7 +167,7 @@
         justify-content: flex-start;
         align-items: center;
         padding: 0 15px 6px 10px;
-        width: 562px;
+        width: 100%;
         height: 48px;
         border-radius: 15px;
         border: 1px solid $gray;
@@ -202,7 +202,7 @@
     }
 
     .save-btn {
-      width: 567px;
+      width: 100%;
       height: 44px;
       background-color: $primary-color;
       border-radius: 15px;
@@ -237,6 +237,9 @@
       align-items: center;
       padding-right: 16px;
       .close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 30px;
         height: 30px;
         border-radius: 50px;
@@ -352,7 +355,7 @@
 .company {
   border-left: 1px solid $light-gray;
   border-right: 1px solid $light-gray;
-  width: 615px;
+  width: 100%;
   height: 140vh;
   padding: 20px 29px 16px 24px;
 
@@ -363,7 +366,7 @@
       align-items: center;
       background-color: $gray;
       color: $smoke-white;
-      width: 562px;
+      width: 100%;
       height: 48px;
       padding: 12px 16px 12px 16px;
       margin-bottom: 16px;
@@ -393,7 +396,7 @@
   background-color: $background-color;
   align-items: center;
   color: white;
-  width: 615px;
+  width: 100%;
   height: 140vh;
   border-left: 1px solid $light-gray;
   border-right: 1px solid $light-gray;
@@ -402,7 +405,7 @@
 
   input {
     &.report-input {
-      width: 562px !important;
+      width: 100% !important;
       height: 130px !important;
       background-color: $gray;
       text-align: end;
@@ -425,7 +428,7 @@
   .add-doc {
     display: flex;
     justify-content: center;
-    width: 562px;
+    width: 100%;
     background-color: $gray;
     height: 64px;
     padding: 8px;
@@ -550,7 +553,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 562px;
+    width: 100%;
     height: 44px;
     border-radius: 14px;
     background-color: $primary-color;
@@ -565,7 +568,7 @@
   background-color: $background-color;
   align-items: center;
   color: white;
-  width: 615px;
+  width: 100%;
   height: 140vh;
   border-left: 1px solid $light-gray;
   border-right: 1px solid $light-gray;
@@ -585,7 +588,7 @@
   }
 
   .footer-about-us {
-    width: 560px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -616,7 +619,7 @@
 .login-setting {
   border-left: 1px solid $light-gray;
   border-right: 1px solid $light-gray;
-  width: 615px;
+  width: 100%;
   height: 140vh;
   padding: 20px 29px 16px 24px;
 
@@ -627,7 +630,7 @@
       align-items: center;
       background-color: $gray;
       color: $smoke-white;
-      width: 562px;
+      width: 100%;
       height: 48px;
       padding: 12px 16px 12px 16px;
       margin-bottom: 16px;
@@ -655,7 +658,7 @@
 .switch-account{
     border-left: 1px solid $light-gray;
     border-right: 1px solid $light-gray;
-    width: 615px;
+    width: 100%;
     height: 140vh;
     padding: 20px 29px 16px 24px;
 
@@ -666,7 +669,7 @@
             align-items: center;
             background-color: $gray;
             color: $smoke-white;
-            width: 562px;
+            width: 100%;
             height: 48px;
             padding: 12px 16px 12px 16px;
             margin-bottom: 16px;
@@ -718,6 +721,9 @@
       justify-content: end;
       padding-right: 16px;
       .close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 30px;
         height: 30px;
         border-radius: 50px;

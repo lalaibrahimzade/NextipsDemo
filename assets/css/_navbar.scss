@@ -1,44 +1,39 @@
 .navbar-main {
   display: flex !important;
   justify-content: space-around;
-  width: 615px;
+  width: 100%;
   height: 81px;
   background-color: $dark-gray;
   border: 1px solid $light-gray;
 
   .parent {
-    .child {
-      border: 1px solid $light-gray;
-      background-color: $gray;
-      border-radius: 50px;
-      display: inline-block;
       padding-top: 8px;
-      color: aliceblue !important;
-    }
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-evenly;
 
-    .child a {
-      text-decoration: none;
-      color: rgba(240, 248, 255, 0.5);
-    }
+      a{
+        text-decoration: none;
+        color: $smoke-white;
+        padding-bottom: 3px;
 
-    .c-first {
-      width: 187px;
-      height: 41px;
-      margin-right: 5px;
-    }
+        &.clicked-style{
+          color: #fff;
+        }
 
-    .c-second {
-      width: 124px;
-      height: 41px;
-      margin-left: 5px;
-    }
+        &:hover {
+          color: #fff;
+        }
+      }
   }
 
   .setting-nav {
     display: flex;
     justify-content: space-between;
     gap: 132px;
-
+    width: 100%;
+    padding: 0 0 0 10px;
     .main-div {
         background-color: $gray;
         display: flex;

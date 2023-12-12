@@ -1,16 +1,14 @@
 <template>
 <div class="right-sidebar">
-    <div class="row gap-2">
-      <div class="col">
+      <div >
         <Search/>
       </div>
-      <div class="col">
+      <div >
         <Forecasters/>
       </div>
-      <div class="col">
+      <div >
         <PopularUsers/>
       </div>
-    </div>
 </div>
 
 </template>

@@ -74,14 +74,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    width: 100%;
     .head-text {
-      width: 504px;
+      text-align: center;
+      width: 100%;
       height: 34px;
       font-size: 32px;
       line-height: 33.98px;
       font-weight: 600;
-      margin-left: 10px;
       margin-top: 40px;
     }
 
@@ -112,13 +112,13 @@
     }
 
     p {
-      width: 253px;
+      width: 100%;
       height: 17px;
       line-height: 16.99px;
       font-size: 16px;
       font-weight: 500;
       margin-top: 32px;
-      margin-right: 20px;
+      text-align: center;
       gap: 12px;
 
       a {
@@ -129,11 +129,10 @@
 
   .create-password {
     position: absolute;
-    width: 540px;
-    height: 390px;
+    width: 100%;
+    height: 360px;
     display: flex;
-    left: 120px;
-    top: 90px;
+    top: 20%;
     transform: translate(50%, -50);
     margin-left: auto;
     flex-direction: column;
@@ -214,29 +213,26 @@
       margin-right: 15px;
 
       .otp-text {
-        margin-right: 65px;
         .head-text {
-          width: 300px;
+          text-align: center;
+          width: 100%;
           font-size: 32px;
           line-height: 33.98px;
           font-weight: 600;
-          margin-left: 100px;
-          margin-top: 40px;
         }
 
         .otp-paragraf {
-          width: 327px;
+          width: 100%;
+          align-self: center;
           opacity: 60%;
-          text-align: center;
           font-size: 14px;
           line-height: 16.94px;
           font-weight: 500;
-          margin-left: 90px;
         }
       }
 
       .centered-main {
-        margin-top: 26px;
+        margin-top: 18px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -302,29 +298,30 @@
     }
 
     .step-3 {
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
 
       .head-text {
-        width: 264px;
+        width: 100%;
         font-size: 32px;
         line-height: 33.98px;
         font-weight: 600;
-        margin-right: 20px;
         margin-top: 15px !important;
+        text-align: center;
       }
 
       p {
-        width: 327px;
+        width: 100%;
         text-align: center;
         opacity: 60%;
         font-size: 14px;
         font-weight: 500;
         line-height: 16.94px;
         margin-top: 5px;
-        margin-bottom: 32px;
+        margin-bottom: 10px;
       }
 
       .centered-main {
@@ -424,10 +421,9 @@
 
   .login {
     position: absolute;
-    width: 540px;
+    width: 100%;
     height: 390px;
     display: flex;
-    left: 120px;
     top: 90px;
     transform: translate(50%, -50);
     margin-left: auto;
@@ -447,22 +443,22 @@
 
         .head-text {
           text-align: center;
-          width: 282px;
+          width: 100%;
           font-size: 32px;
           line-height: 33.98px;
           font-weight: 600;
-          margin-right: 20px;
           margin-top: 15px !important;
         }
 
         p {
-          width: 327px;
+          width: 100%;
           opacity: 0.6;
           font-size: 14px;
+          text-align: center;
         }
 
         .centered-main {
-          margin-top: 26px;
+          margin-top: 20px;
           display: flex;
           flex-direction: column;
 
@@ -569,7 +565,7 @@
             margin-left: 40px;
             .arrow {
               position: absolute;
-              left: -8%;
+              left: -15%;
             }
           }
         }
@@ -583,7 +579,7 @@
 
         .head-text {
           text-align: center;
-          width: 308px;
+          width: 100%;
           font-size: 32px;
           line-height: 33.98px;
           font-weight: 600;
@@ -592,13 +588,14 @@
         }
 
         p {
-          width: 327px;
+          width: 100%;
           opacity: 0.6;
           font-size: 14px;
+          text-align: center;
         }
 
         .centered-main {
-          margin-top: 26px;
+          margin-top: 20px;
           display: flex;
           flex-direction: column;
 
@@ -676,7 +673,7 @@
             line-height: 18px;
             color: rgba(62, 128, 253, 1);
             text-decoration: underline;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             margin-left: 0;
           }
 
@@ -705,7 +702,7 @@
             margin-left: 40px;
             .arrow {
               position: absolute;
-              left: -8%;
+              left: -15%;
             }
           }
         }

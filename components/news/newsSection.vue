@@ -1,14 +1,14 @@
 <template>
-  <div class="news">
-    <div class="main-news">
-      <nuxt-link to="/news/id">
+  <div class="news conatiner" >
+    <div class="main-news row">
+      <nuxt-link to="/news/id" class="col-6">
         <a href="#">
           <div class="main-img-sec">
             <img src="../../assets/image/news-1.svg" class="main-image" />
           </div>
         </a>
       </nuxt-link>
-      <div class="main-text">
+      <div class="main-text col-6">
         <nuxt-link to="/news/id">
           <a href="#">
             <div class="text-head">
@@ -26,9 +26,8 @@
         </div>
       </div>
     </div>
-    <div class="other-news">
-      <div class="news-row" v-for="news in data">
-        <div class="news-sec">
+    <div class="other-news row"  v-for="news in data">
+        <div class="news-sec col-4">
           <nuxt-link to="/news/id">
             <a href="#">
               <div class="news-img">
@@ -38,13 +37,11 @@
           </nuxt-link>
           <nuxt-link to="/news/id">
             <a href="#">
-              <div class="news-text">
                 <p>The Verdict: Rob Page's best result for Wales?</p>
-              </div>
             </a>
           </nuxt-link>
         </div>
-        <div class="news-sec">
+        <div class="news-sec col-4">
           <nuxt-link to="/news/id">
             <a href="#">
               <div class="news-img">
@@ -60,7 +57,7 @@
             </a>
           </nuxt-link>
         </div>
-        <div class="news-sec">
+        <div class="news-sec col-4">
           <nuxt-link to="/news/id">
             <a href="#">
               <div class="news-img">
@@ -76,7 +73,6 @@
             </a>
           </nuxt-link>
         </div>
-      </div>
     </div>
   </div>
 </template>

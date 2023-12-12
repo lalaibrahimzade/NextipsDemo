@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 .explore-sec {
-  width: 615px;
+  width: 100%;
   height: 140vh;
   overflow: scroll;
   overflow-x: hidden;
 
   .explore {
     background-color: $background-color;
-    width: 614px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px 20px 10px 20px;
     color: white;
@@ -20,7 +20,8 @@
       display: flex;
       align-items: center;
       overflow: hidden;
-      margin-bottom: 16px;
+      margin-bottom: 20px;
+
       .user-icon {
         height: 45px;
         width: 45px;
@@ -35,7 +36,7 @@
         flex-direction: column;
         flex: 1;
         text-align: left;
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
 
         .name {
           font-size: 16px;
@@ -53,7 +54,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
       width: 75px;
       height: 31px;
       border-radius: 50px;
@@ -64,136 +65,238 @@
       font-size: 14px;
     }
 
-    .league {
+    .league-card {
+      width: 100%;
       display: flex;
+      align-items: center;
+      justify-content: center;
       flex-direction: column;
-      background-color: $gray;
-      border-radius: 15px;
-      padding: 10px;
-      height: 236px;
-      border: 1px solid $light-gray;
-      .league-header {
-        width: 564px;
-        height: 42px;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        padding: 10px;
-        margin-bottom: 10px;
-        .lig-icon {
-          height: 18px;
-          width: 20px;
-          overflow: hidden;
-          display: flex;
-          align-items: center;
-        }
+      gap: 10px;
 
-        .lig-name {
-          margin-left: 10px;
-          flex-direction: column;
-          flex: 1;
-          text-align: left;
-          font-size: 14px;
-          line-height: 14.52px;
-          font-family: 'Inter', sans-serif;
-        }
-      }
-
-      .league-main {
-        background-color: $dark-gray;
-        width: 568px;
-        height: 120px;
-        padding: 10px;
-        align-self: center;
-        margin-bottom: 10px;
-        .team {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 10px;
-          .team-icon {
-            background-color: $light-gray;
-            width: 52px;
-            height: 52px;
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 5px;
-          }
-
-          .team-name {
-            font-weight: 500;
-            font-size: 13px;
-            font-family: 'Inter', sans-serif;
-          }
-
-          .time-icon {
-            background-color: $light-gray;
-            width: 32px;
-            height: 29px;
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 5px;
-            margin-top: 15px;
-          }
-
-          .time {
-            width: 75px;
-            height: 21px;
-            background-color: #333539;
-            border-radius: 5px;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            position: relative;
-            p {
-              position: absolute;
-              font-size: 10px;
-              left: 10px;
-              top: 3px;
-              font-weight: 600;
-              float: left;
-              margin-left: 5px;
-            }
-
-            .timer-icon {
-              width: 5px;
-              height: 13px;
-              background-color: #4f5155;
-              float: left;
-              border-radius: 50px;
-              margin-top: 4px;
-              margin-left: 3px;
-            }
-          }
-        }
-
-        .time-sec {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 10px;
-        }
-      }
-
-      .league-footer {
+      .league {
         display: flex;
         flex-direction: column;
-        padding: 0 20px 0 20px;
-        color: rgba(255, 255, 255, 0.6);
-        .score {
+        background-color: $gray;
+        border-radius: 15px;
+        border: 1px solid $light-gray;
+        .league-header {
+          width: 100%;
+          height: 35px;
           display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          font-family: 'Inter', sans-serif;
-          p {
-            font-size: 12px;
-            font-weight: 500;
+          align-items: center;
+          overflow: hidden;
+          padding: 10px;
+          .lig-icon {
+            height: 18px;
+            width: 20px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+          }
 
-            &.odd-score {
-              color: $odd-green;
+          .lig-name {
+            margin-left: 10px;
+            flex-direction: column;
+            flex: 1;
+            text-align: left;
+            font-size: 14px;
+            line-height: 14.52px;
+            font-family: "Inter", sans-serif;
+          }
+        }
+
+        .league-main {
+          background-color: $dark-gray;
+          width: 100%;
+          height: 90px;
+          align-items: center;
+          display: flex;
+          float: left;
+          .teams {
+            display: flex;
+            flex-direction: column;
+            width: 84%;
+            height: 90px;
+            justify-content: center;
+            gap: 10px;
+            margin-left: 5px;
+            .team-sec {
+              display: flex;
+              float: left;
+              align-items: center;
+              padding: 5px 15px 5px 5px;
+              gap: 4px;
+              .team-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+                .team-icon{
+                  width: 30px;
+                  height: 25px;
+                }
+              }
+              .team-name {
+                padding-left: 10px;
+                font-family: "Inter", sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 15px;
+                letter-spacing: 0.003em;
+                text-align: left;
+              }
+            }
+            .line {
+              width: 400px;
+              background-color: $light-gray;
+              height: 1px;
+            }
+          }
+
+          .left-sec {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            color: #fff;
+            .time-sec {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-family: "Inter", sans-serif;
+              font-size: 14px;
+              font-weight: 500;
+              letter-spacing: 0.003em;
+              background-color: $background-color;
+              width: 84px;
+              height: 90px;
+            }
+          }
+        }
+
+        .league-footer {
+          display: flex;
+          float: left;
+          width: 100%;
+          height: 50px;
+          display: flex;
+          margin-left: 5px;
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          .goals {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 0 15px 5px;
+            .goals-status-name{
+              font-family: "Inter", sans-serif;
+              font-size: 12px;
+              line-height: 15px;
+              letter-spacing: 0.003em;
+              text-align: left;
+              color: $smoke-white;
+            }
+
+            .goals-status{
+              font-family: "Inter", sans-serif;
+              font-size: 12px;
+              line-height: 15px;
+              font-weight: 600;
+              letter-spacing: 0.003em;
+              text-align: left;
+              color: #fff;
+            }
+            
+          }
+          .odds-sec {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: 5px;
+            align-items: center;
+            font-family: "Inter", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.003em;
+            width: 84px;
+            height: 50px;
+            
+            .odds {
+              background-color: $primary-color;
+              width: 100%;
+              height: 25px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .odds-score {
+              background-color: $primary-color-light;
+              width: 100%;
+              height: 25px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-bottom-right-radius: 15px;
+            }
+          }
+        }
+      }
+      .more-card{
+        background-color: $gray;
+        width: 100%;
+        height: 50px;
+        border: 1px solid $light-gray;
+        border-radius: 15px;
+        display: flex;
+        float: left;
+        padding: 10px;
+        .coefficient{
+          display: flex;
+          align-items: center;
+          float: left;
+          width: 250px;
+          color: #fff;
+          .coefficient-text{
+            flex: 1;
+            text-align: left;
+            font-size: 14px;
+            line-height: 14.52px;
+            font-family: "Inter", sans-serif;
+
+          }
+          .coefficient-score{
+            flex: 1;
+            text-align: left;
+            font-size: 14px;
+            line-height: 14.52px;
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+          }
+        }
+
+        .toggle{
+          margin-left: auto;
+          display: flex;
+          float: left;
+          align-items: center;
+          color: $smoke-white;
+          gap: 5px;
+          .card-amount{
+            flex: 1;
+            text-align: left;
+            font-size: 14px;
+            line-height: 14.52px;
+            font-family: "Inter", sans-serif;
+          }
+
+          .toggle-btn{
+            cursor: pointer;
+            .toggle-img{
+              width: 14px;
+              height: 14px;
             }
           }
         }
