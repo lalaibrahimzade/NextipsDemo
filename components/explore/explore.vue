@@ -114,7 +114,7 @@
       name: "explore",
       data() {
     return {
-      showLeagues: true,
+      showLeagues: false,
       leagues: [1,2,3],
     }
   },

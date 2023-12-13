@@ -49,11 +49,15 @@ export default {
       this.addGameHandle(true);
     });
 
-    eventBus.$on('closeCouponCard', () => {
-      this.addGameHandle(true);
+    eventBus.$on('closeCard', () => {
+      this.gameOption(true);
     });
 
     eventBus.$on('addNewCouponCard', () =>{
+      this.gameOption(true);
+    });
+
+    eventBus.$on('closeOdds', () =>{
       this.addGameHandle(true);
     });
   },

@@ -71,7 +71,7 @@ export default {
   name: "couponCard",
   methods: {
     close() {
-      eventBus.$emit("closeCouponCard");
+      eventBus.$emit("closeCard");
     },
     addNew() {
       eventBus.$emit("addNewCouponCard");

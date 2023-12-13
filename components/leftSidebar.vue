@@ -79,9 +79,8 @@
               </a>
             </nuxt-link>
           </li>
-
           <li v-if="$auth.user" >
-            <Nuxt-link to="/profile">
+            <nuxt-link to="/profile">
             <a href="#">
               <div class="nav-content">
                 <div class="icon">
@@ -90,12 +89,10 @@
                 <p class="nav-item-name">Profile</p>
               </div>
             </a>
-            </Nuxt-link>
+            </nuxt-link>
           </li>
-
-
           <li v-else @click="authModalHandle(true)" >
-
+            <nuxt-link to="">
               <a href="#">
                 <div class="nav-content">
                   <div class="icon">
@@ -104,15 +101,16 @@
                   <p class="nav-item-name">Sign in</p>
                 </div>
               </a>
-
+            </nuxt-link>
           </li>
-
           <li @click="addGameHandle(true)">
             <nuxt-link to="/addCoupon">
               <a href="#">
+                <div class="nav-content">
                   <div class="plus-div">
                     Add
                   </div>
+                </div>
               </a>
             </nuxt-link>
           </li>

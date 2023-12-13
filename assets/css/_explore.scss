@@ -108,7 +108,7 @@
         .league-main {
           background-color: $dark-gray;
           width: 100%;
-          height: 90px;
+          height: 75px;
           align-items: center;
           display: flex;
           float: left;
@@ -116,7 +116,7 @@
             display: flex;
             flex-direction: column;
             width: 84%;
-            height: 90px;
+            height: 75px;
             justify-content: center;
             gap: 10px;
             margin-left: 5px;
@@ -124,7 +124,7 @@
               display: flex;
               float: left;
               align-items: center;
-              padding: 5px 15px 5px 5px;
+              padding: 1px 15px 1px 5px;
               gap: 4px;
               .team-icon {
                 display: flex;
@@ -170,7 +170,7 @@
               letter-spacing: 0.003em;
               background-color: $background-color;
               width: 84px;
-              height: 90px;
+              height: 75px;
             }
           }
         }

@@ -89,7 +89,7 @@ export default {
   auth: {
     strategies: {
       local: {
-        url: 'http://nextips.test',
+        url: 'https://nextips.com',
 
         endpoints: {
           login: {url: '/front/auth/login', method: 'post', propertyName: 'token'},

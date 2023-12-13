@@ -296,7 +296,7 @@
       .head-couponlig {
         display: flex;
         align-items: center;
-        padding-top: 8px;
+        padding: 8px 12px 0 12px;
         background-color: $gray;
         height: 30px;
         width: 100%;
@@ -306,7 +306,6 @@
           width: 100%;
           height: 25px;
           display: flex;
-          margin-left: 12px;
           gap: 5px;
           .flag {
             width: 12px;
@@ -323,48 +322,16 @@
             font-size: 12px;
           }
         }
-
-        .coefficient-sections {
+        .close {
           display: flex;
-          width: 100%;
-          .part-one {
-            width: 100%;
-            height: 13px;
-            font-family: Inter;
-            font-weight: 500;
-            line-height: 13px;
-            letter-spacing: 0em;
-            font-size: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-
-          .icon {
-            width: 100%;
-            height: 13px;
-            font-family: Inter;
-            font-weight: 500;
-            line-height: 13px;
-            letter-spacing: 0em;
-            font-size: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-
-          .part-two {
-            width: 100%;
-            height: 13px;
-            font-family: Inter;
-            font-weight: 500;
-            line-height: 13px;
-            letter-spacing: 0em;
-            font-size: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
+          justify-content: center;
+          align-items: center;
+          font-family: "Inter", sans-serif;
+          background-color: $gray !important;
+          color: white;
+          font-weight: 500;
+          font-size: 12px;
+          cursor: pointer;
         }
       }
 
@@ -616,7 +583,7 @@
         .league-main {
           background-color: $dark-gray;
           width: 100%;
-          height: 90px;
+          height: 75px;
           align-items: center;
           display: flex;
           float: left;
@@ -624,7 +591,7 @@
             display: flex;
             flex-direction: column;
             width: 84%;
-            height: 90px;
+            height: 75px;
             justify-content: center;
             gap: 10px;
             margin-left: 5px;
@@ -632,7 +599,7 @@
               display: flex;
               float: left;
               align-items: center;
-              padding: 5px 15px 5px 5px;
+              padding: 1px 15px 1px 5px;
               gap: 4px;
               .team-icon {
                 display: flex;
@@ -640,7 +607,7 @@
                 align-items: center;
                 width: 20px;
                 height: 20px;
-                .team-icon{
+                .team-icon {
                   width: 30px;
                   height: 25px;
                 }
@@ -678,7 +645,7 @@
               letter-spacing: 0.003em;
               background-color: $background-color;
               width: 64px;
-              height: 90px;
+              height: 75px;
             }
           }
         }
@@ -698,7 +665,7 @@
             justify-content: center;
             gap: 10px;
             padding: 10px 0 15px 5px;
-            .goals-status-name{
+            .goals-status-name {
               font-family: "Inter", sans-serif;
               font-size: 12px;
               line-height: 15px;
@@ -707,7 +674,7 @@
               color: $smoke-white;
             }
 
-            .goals-status{
+            .goals-status {
               font-family: "Inter", sans-serif;
               font-size: 12px;
               line-height: 15px;
@@ -716,7 +683,6 @@
               text-align: left;
               color: #fff;
             }
-            
           }
           .odds-sec {
             display: flex;

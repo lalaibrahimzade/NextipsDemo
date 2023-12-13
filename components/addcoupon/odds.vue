@@ -6,6 +6,7 @@
                 <img src="../../assets/image/az.svg" alt="azerbaijan flag" class="flag">
                 <p>Azerbaijan: Premiere League</p>
             </div>
+            <div class="close" @click="close()">X</div>
         </div>
         <div class="lig-card">
             <div class="time-sec">
@@ -51,6 +52,7 @@
 </template>
 
 <script>
+import eventBus from '../../plugins/event-bus';
 export default {
   name: "odds",
   data() {
@@ -79,8 +81,11 @@ export default {
       return this.isCollapsedCountries.includes(id);
     },
     cuponCard(param){
-          this.$emit('cuponCard')
-        },
+      this.$emit('cuponCard')
+    },
+  close(){
+    eventBus.$emit("closeOdds");
+  }
   },
 }
 </script>

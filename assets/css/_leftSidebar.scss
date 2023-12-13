@@ -1,28 +1,33 @@
 .sidebar {
-  width: 70px;
+  width: 100%;
   min-height: 462px;
+  margin: 0;
+  padding: 0;
   .sidebar-navigation {
+    width: 100%;
+    align-items:flex-start;
+    justify-content: flex-start;
     .nav-list {
-      padding-left: 0;
-      padding-right: 80px;
       color: white;
-
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
       li {
         padding: 19px 0;
         cursor: pointer;
         transition: all ease-out 120ms;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
         a {
           text-decoration: none;
           color: $smoke-white;
-
           .nav-content{
+            width: 100%;
             display: flex;
             float: left;
             align-items: center;
-            width: 10px;
+            justify-content: flex-start;
             gap: 10px;
             .icon{
               height: 36px;
@@ -37,26 +42,25 @@
               color: $smoke-white;
               font-size: 16px;
               margin: 0;
+              width: 100%;
 
               &:hover{
                 color: #fff;
                 font-weight: 500;
               }
             }
+            .plus-div{
+              width: 120px;
+              padding: 8px 18px 8px 18px;
+              border-radius: 50px;
+              background-color: $primary-color;
+              display: flex;
+              align-self: flex-start;
+              justify-content: center;
+              color: #fff;
+            }
           }
 
-          .plus-div{
-            margin-left: 120px;
-            width: 160px;
-            padding: 8px 18px 8px 18px;
-            border-radius: 50px;
-            background-color: $primary-color;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-          }
-          
         }
       }
     }

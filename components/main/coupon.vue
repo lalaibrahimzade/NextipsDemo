@@ -120,8 +120,8 @@ export default {
   name: "coupon",
   data() {
     return {
-      showLeagues: true,
-      leagues: [1,2,3],
+      showLeagues: false,
+      leagues: [1,2,3,4,5],
     }
   },
   methods: {
