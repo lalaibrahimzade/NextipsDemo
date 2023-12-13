@@ -92,10 +92,9 @@ export default {
         url: 'http://nextips.test',
 
         endpoints: {
-          login: {url: '/front/login', method: 'post', propertyName: 'token'},
-
+          login: {url: '/front/auth/login', method: 'post', propertyName: 'token'},
           logout: {url: '/front/logout', method: 'post',},
-          user: {url: '/front/user', method: 'get', propertyName: 'user'}
+          user: {url: '/front/auth/user', method: 'get', propertyName: 'user'}
         },
         redirect: {
           login: '/login',
