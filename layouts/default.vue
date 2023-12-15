@@ -13,7 +13,7 @@
           <Nuxt />
         </div>
         <div class="col-4">
-          <RightSidebar />
+          <RightSidebar @basketModalOpenned="basketModalOpenned" @basketModalIsClosed="basketModalIsClosed"/>
         </div>
       </div>
     </div>
@@ -35,6 +35,7 @@ export default {
   data() {
     return {
       authModalIsOpen: false,
+      basketModalIsOpen: false,
     };
   },
   methods: {
@@ -45,6 +46,14 @@ export default {
     authModalIsClosed(){
       this.authModalIsOpen = false;
       console.log(this.authModalIsOpen);
+    },
+    basketModalOpenned() {
+      this.basketModalIsOpen = true;
+      console.log(this.basketModalIsOpen);
+    },
+    basketModalIsClosed(){
+      this.basketModalIsOpen = false;
+      console.log(this.basketModalIsOpen);
     }
   },
 };

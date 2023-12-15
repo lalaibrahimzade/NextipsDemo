@@ -1,0 +1,376 @@
+.basket-sec {
+  position: absolute;
+  width: 480px;
+  height: 600px;
+  left: 64%;
+  top: 4%;
+  background-color: $dark-gray;
+  border: 1px solid $light-gray;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: white;
+  padding: 16px 12px 16px 12px;
+  gap: 14px;
+  border-radius: 19px;
+  z-index: 2222;
+  .basketheader {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .your-coupons {
+      display: flex;
+      align-self: flex-start;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .close {
+      margin-right: auto;
+      cursor: pointer;
+    }
+  }
+
+  .tip-coupons {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    padding: 0 10px 0 0;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      width: 10px;
+      border-radius: 19px;
+      border-left: 1px solid #333539;
+      border-right: 1px solid #333539;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary-color;
+      height: 25% !important;
+      border: 1px solid #333539;
+      border-radius: 16px;
+    }
+    .league-card {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+
+      .league {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: $gray;
+        border-radius: 15px;
+        border: 1px solid $light-gray;
+        .league-header {
+          width: 100%;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          overflow: hidden;
+          padding: 10px;
+          .lig-icon {
+            height: 18px;
+            width: 20px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+          }
+
+          .lig-name {
+            margin-left: 10px;
+            flex-direction: column;
+            flex: 1;
+            text-align: left;
+            font-size: 14px;
+            line-height: 14.52px;
+            font-family: "Inter", sans-serif;
+          }
+
+          .close {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Inter", sans-serif;
+            background-color: $gray !important;
+            color: white;
+            font-weight: 500;
+            font-size: 14px;
+            cursor: pointer;
+          }
+        }
+
+        .league-main {
+          background-color: $dark-gray;
+          width: 100%;
+          height: 75px;
+          align-items: center;
+          display: flex;
+          float: left;
+          .teams {
+            display: flex;
+            flex-direction: column;
+            width: 84%;
+            height: 75px;
+            justify-content: center;
+            gap: 10px;
+            margin-left: 5px;
+            .team-sec {
+              display: flex;
+              float: left;
+              align-items: center;
+              padding: 1px 15px 1px 5px;
+              gap: 4px;
+              .team-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+                .team-icon {
+                  width: 30px;
+                  height: 25px;
+                }
+              }
+              .team-name {
+                padding-left: 10px;
+                font-family: "Inter", sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 15px;
+                letter-spacing: 0.003em;
+                text-align: left;
+              }
+            }
+            .line {
+              width: 100%;
+              background-color: $light-gray;
+              height: 1px;
+            }
+          }
+
+          .left-sec {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            color: #fff;
+            .time-sec {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-family: "Inter", sans-serif;
+              font-size: 14px;
+              font-weight: 500;
+              letter-spacing: 0.003em;
+              background-color: $background-color;
+              width: 84px;
+              height: 75px;
+            }
+          }
+        }
+
+        .league-footer {
+          display: flex;
+          float: left;
+          width: 100%;
+          height: 50px;
+          display: flex;
+          margin-left: 5px;
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          .goals {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 0 15px 5px;
+            .goals-status-name {
+              font-family: "Inter", sans-serif;
+              font-size: 12px;
+              line-height: 15px;
+              letter-spacing: 0.003em;
+              text-align: left;
+              color: $smoke-white;
+            }
+
+            .goals-status {
+              font-family: "Inter", sans-serif;
+              font-size: 12px;
+              line-height: 15px;
+              font-weight: 600;
+              letter-spacing: 0.003em;
+              text-align: left;
+              color: #fff;
+            }
+          }
+          .odds-sec {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: 5px;
+            align-items: center;
+            font-family: "Inter", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.003em;
+            width: 84px;
+            height: 50px;
+
+            .odds {
+              background-color: $primary-color;
+              width: 100%;
+              height: 25px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .odds-score {
+              background-color: $primary-color-light;
+              width: 100%;
+              height: 25px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-bottom-right-radius: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .total-coefficient {
+    width: 100%;
+    display: flex;
+    padding: 15px 10px 0 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    border: 1px solid $light-gray;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.003em;
+    margin-right: auto;
+
+    .coefficient-count {
+      margin-left: auto;
+    }
+  }
+
+  .description-sec{
+    .description{
+      width: 100%;
+      height: 78px;
+      border-radius: 19px;
+      color: $smoke-white;
+      background-color: $dark-gray;
+      border: 1px solid $light-gray;
+      outline: none;
+      padding: 15px 0 50px 10px;
+    }
+  }
+
+  .paid-coupon {
+    width: 100%;
+    display: flex;
+    padding: 15px 0 0 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    border: 1px solid $light-gray;
+    .paid-text {
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 15px;
+      letter-spacing: 0.003em;
+      margin-right: auto;
+    }
+    &.verification {
+      position: relative;
+      .switch-btn {
+        position: absolute;
+        right: 15px;
+        bottom: 8px;
+        margin-left: auto;
+        input[type="checkbox"] {
+          height: 0;
+          width: 0;
+          visibility: hidden;
+        }
+
+        label {
+          cursor: pointer;
+          text-indent: -9999px;
+          width: 56px;
+          height: 32px;
+          background: grey;
+          display: block;
+          border-radius: 100px;
+          position: relative;
+
+          &:after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 24px;
+            height: 24px;
+            background: #fff;
+            border-radius: 90px;
+            transition: 0.3s;
+          }
+        }
+
+        input:checked + label {
+          background: $primary-color;
+
+          &:after {
+            left: calc(100% - 5px);
+            transform: translateX(-100%);
+          }
+        }
+
+        // label:active:after {
+
+        // }
+      }
+    }
+  }
+
+  .amount-sec{
+    .amount{
+      width: 100%;
+      height: 30px;
+      border-radius: 19px;
+      color: $smoke-white;
+      background-color: $dark-gray;
+      border: 1px solid $light-gray;
+      outline: none;
+      padding: 20px 0 20px 10px;
+      font-weight: 700;
+    }
+  }
+  .post{
+    width: 100%;
+    height: 54px;
+    background-color: $primary-color;
+    border-radius: 19px;
+    border: 1px solid $light-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

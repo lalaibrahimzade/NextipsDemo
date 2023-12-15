@@ -91,7 +91,7 @@
             </a>
             </nuxt-link>
           </li>
-          <li v-else @click="authModalHandle(true)" >
+          <li v-else @click="authModalHandle(true)">
             <nuxt-link to="">
               <a href="#">
                 <div class="nav-content">
