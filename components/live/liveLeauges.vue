@@ -13,10 +13,10 @@
               alt="azerbaijan flag"
               class="flag"
             />
-            <p>{{collapse.name }}</p>
-          </div>
-          <div class="pin-icon">
-            <img src="../../assets/image/pin-icon.svg" alt="pin icon" />
+            <p class="country-name">{{collapse.name }}</p>
+            <div class="pin-icon">
+              <img src="../../assets/image/pin-icon.svg" alt="pin icon" />
+            </div>
           </div>
           <div class="toggle">
             <img
@@ -30,10 +30,11 @@
         <div class="lig-card" :class="{ 'collapsed': isCollapsed(collapse.id) }"
         v-for="lig in ligs">
           <div class="time-sec">
-            <p class="time">{{ lig.time }} <span class="time-part">{{lig.timepart}}</span></p>
+            <p class="time">{{ lig.time }}</p>
+            <p class="time-part">{{lig.timepart}}</p>
           </div>
           <div class="teams"  :key="lig.id">
-            <div class="team-first">
+            <div class="first-team">
               <div class="team-head">
                 <img src="../../assets/image/dinamo-kiev.svg" alt="team icon" />
                 <h1>{{ lig.name1 }}</h1>
@@ -43,7 +44,7 @@
                 <div class="count-teamF">{{lig.score1f}}</div>
               </div>
             </div>
-            <div class="team-second">
+            <div class="second-team">
               <div class="team-head">
                 <img src="../../assets/image/dnipro.svg" alt="team icon" />
                 <h1>{{ lig.name2 }}</h1>

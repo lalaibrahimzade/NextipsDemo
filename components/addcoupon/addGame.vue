@@ -11,7 +11,12 @@
       />
     </div>
     <div>
-      <odds v-if="viewedComponent == 'odds'" @cuponCard="cuponCard" @updateBetId="updateBetId" @updateOddId="updateOddId" />
+      <odds
+        v-if="viewedComponent == 'odds'"
+        @cuponCard="cuponCard"
+        @updateBetId="updateBetId"
+        @updateOddId="updateOddId"
+      />
     </div>
     <!-- <div>
       <couponCard v-if="viewedComponent == 'cuponCard'" />
@@ -50,24 +55,18 @@ export default {
     addGameHandle(param) {
       this.viewedComponent = "addCouponLig";
     },
-
+   
     gameOption(id) {
-      console.log("Card ID:", id);
-      this.couponItems[0].game_id=id;
       this.viewedComponent = "odds";
-      console.log("Updated couponItems:", this.couponItems);
+      this.couponItems[0].game_id = id;
     },
 
-    cuponCard(type) {
-    this.leaguesData.push(type);
-    console.log("Updated leaguesData:", this.leaguesData);
-    eventBus.$emit('updateLeaguesData', this.leaguesData.length);
-  },
+    
     updateBetId(betId) {
-      this.couponItems[0].bet_id=betId;
+      this.couponItems[0].bet_id = betId;
     },
     updateOddId(oddId) {
-      this.couponItems[0].odd_id=oddId;
+      this.couponItems[0].odd_id = oddId;
     },
   },
 

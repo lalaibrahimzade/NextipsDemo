@@ -5,19 +5,19 @@
     <HeaderSection />
     <div class="container">
       <div class="row">
-        <div class="col-2">
+        <div class="col-md-3 col-12">
           <LeftSidebar @authModalOpenned="authModalOpenned" @authModalIsClosed="authModalIsClosed"/>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-12">
           <Navbar />
           <Nuxt />
         </div>
-        <div class="col-4">
+        <div class="col-md-3 col-12">
           <RightSidebar @basketModalOpenned="basketModalOpenned" @basketModalIsClosed="basketModalIsClosed"/>
         </div>
       </div>
     </div>
-    <FooterSection />
+    <!-- <FooterSection /> -->
   </div>
  </div>
 </template>
@@ -86,6 +86,7 @@ export default {
 
 .default {
   background-color: rgba(26, 28, 33, 1);
+  max-width: 100vw;
 }
 .blur .overlay {
   display: block;

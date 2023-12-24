@@ -1,6 +1,6 @@
 <template>
   <div class="live">
-    <div class="live-left-side">
+    <div class="live-left-side col-md-4 col-6">
         <div>
             <countriesLive />
           </div>
@@ -8,7 +8,7 @@
               <leaugesLive/>
           </div>
     </div>
-    <div>
+    <div class="col-md-8 col-6">
         <liveLeauges @toggle-alarm="handleToggleAlarm"/>
     </div>
   </div>

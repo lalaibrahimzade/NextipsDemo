@@ -6,7 +6,7 @@
     </div>
     <div class="tip-coupons">
       <div class="league-card">
-        <div v-for="(league, index) in leagues" :key="index" class="league">
+        <div v-for="(coupon, index) in coupons" :key="index" class="league">
           <div class="league-header">
             <img
               src="../../assets/image/lig-icon.svg"
@@ -92,28 +92,19 @@
 <script>
 export default {
   name: "basket",
-  props: {
-  leaguesDataLength: {
-    type: Number,
-    default: 0 ,
-  }
-},
+  props:['coupons'],
   data() {
     return {
       showAmount: false,
     };
   },
-  computed: {
-    leagues() {
-      return Array.from({ length: this.leaguesDataLength }, (_, i) => i + 1);
-    }
-  },
   methods: {
-    removeLeague(index) {
-      this.$emit('removeLeagueEvent', index);
-    },
+     removeLeague(index) {
+        this.$store.commit('global/REMOVE_COUPON_ITEM', index);
   },
-};
+  },
+}
+  
 </script>
 <style scoped>
 .hidden {

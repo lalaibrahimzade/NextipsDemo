@@ -1,8 +1,6 @@
 .sidebar {
   width: 100%;
   min-height: 462px;
-  margin: 0;
-  padding: 0;
   .sidebar-navigation {
     width: 100%;
     align-items:flex-start;
@@ -11,10 +9,9 @@
       color: white;
       display: flex;
       flex-direction: column;
-      margin: 0;
       padding: 0;
       li {
-        padding: 19px 0;
+        padding: 0 0 30px 0;
         cursor: pointer;
         transition: all ease-out 120ms;
         display: flex;
@@ -50,7 +47,7 @@
               }
             }
             .plus-div{
-              width: 120px;
+              width: 100%;
               padding: 8px 18px 8px 18px;
               border-radius: 50px;
               background-color: $primary-color;
@@ -66,3 +63,10 @@
     }
   }
 }
+
+.hamburger-menu {
+  display: none;
+  color: $smoke-white;
+  margin-bottom: 15px;
+}
+

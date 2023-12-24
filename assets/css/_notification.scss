@@ -4,6 +4,7 @@
   overflow: scroll;
   overflow-x: hidden;
   border-left: 1px solid $light-gray;
+  font-family: "Inter", sans-serif;
   .notification {
     display: flex;
     align-items: center;
@@ -21,7 +22,7 @@
         margin-bottom: 8px;
         margin-top: 24px;
         height: 30px;
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
       }
 
       .card-notification-follow {
@@ -29,12 +30,14 @@
         width: 100%;
         padding: 24px;
         border-bottom: 1px solid $light-gray;
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
         color: white;
         .follow-notification {
           display: flex;
           float: left;
           width: 100%;
+          gap: 15px;
+          justify-content: space-between;
           .user-notification {
             display: flex;
             float: left;
@@ -71,19 +74,22 @@
           }
 
           .btn-followback {
-            margin-left: auto;
-            width: 120px; //olcunu ozumden yazdim dizayndaki uygun deyildi
-            height: 31px;
-            display: flex;
+            display: inline-block;
+            height: auto;
+            padding: 0.6em 1.2em 0 1.2em;
             align-items: center;
             justify-content: center;
-            padding: 8px 16px 8px 16px;
             background-color: $btn-color;
+            box-sizing: border-box;
+            text-decoration: none;
             font-size: 14px;
+            font-weight: 300;
             color: white;
             border-radius: 50px;
             border: 1px solid $light-gray;
             cursor: pointer;
+            text-align: center;
+            transition: all 0.2s;
           }
         }
       }

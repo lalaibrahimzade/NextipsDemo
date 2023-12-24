@@ -3,6 +3,7 @@
 
 .addGame {
   font-family: "Inter", sans-serif;
+  padding: 5px 12px 16px 12px;
   @extend %section-property;
   .countries {
     @extend %search-country-leauge;

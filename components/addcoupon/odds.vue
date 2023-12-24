@@ -91,10 +91,13 @@ export default {
       return this.isCollapsedCountries.includes(id);
     },
     cuponCard(collapseId, oddId) {
-      this.$emit("cuponCard");
       this.$emit("updateBetId", collapseId);
       this.$emit("updateOddId", oddId);
+
+      let newCouponItem = {collapseId, oddId,};
+      this.$store.commit("global/UPDATE_COUPON_ITEMS", newCouponItem);
     },
+
     close() {
       eventBus.$emit("closeOdds");
     },

@@ -1,19 +1,18 @@
 .footer {
-  position: absolute;
-  width: 322px;
-  height: 65.51px;
-  left: 67.3%;
-  top: 147%;
+  width: 25%;
   padding: 24px 0px 0px 0px;
   border-top: 1px solid $light-gray;
   display: flex;
   color: #fff;
-
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: 10px;
   .footer-items {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
     .left-side {
-      width: 208px;
+      width: 100%;
       display: flex;
       flex-direction: column;
       gap: 8px;

@@ -1,13 +1,7 @@
 <template>
   <div>
     <transition name="basket-modal-animation">
-      <Basket
-        v-if="basketModalIsOpen"
-        @close="basketModalClose()"
-        @leaguesLength="handleLeaguesLength"
-        :leaguesDataLength="leaguesDataLength"
-        @removeLeagueEvent="handleRemoveLeague"
-      />
+      <Basket v-if="basketModalIsOpen" @close="basketModalClose()"  :coupons="coupons"/>
     </transition>
     <div class="right-sidebar">
       <div>
@@ -17,7 +11,7 @@
         <p class="basket-text">Basket</p>
         <div class="basket-icon">
           <i class="fa-solid fa-basket-shopping"></i>
-          <p class="basket-counter">{{ leaguesDataLength }}</p>
+          <p class="basket-counter">{{ coupons.length }}</p>
         </div>
       </div>
       <div>
@@ -26,31 +20,37 @@
       <div>
         <PopularUsers />
       </div>
+      <!-- <div>
+        <FooterSection/>
+      </div> -->
     </div>
   </div>
 </template>
 
 <script>
-import eventBus from "../plugins/event-bus";
 import Search from "./search";
 import PopularUsers from "./popularUsers";
 import Forecasters from "./forecasters";
 import Basket from "../components/basket/basket";
+import {mapGetters} from "vuex";
+import FooterSection from "../layouts/footer-section";
 
 export default {
   name: "rightSidebar",
-  components: { Search, PopularUsers, Basket },
-
+  components: { Search, PopularUsers, Basket, FooterSection },
+  props: {
+    leaguesDataLength: Number,
+  },
   data() {
     return {
       basketModalIsOpen: false,
-      leaguesDataLength: 0,
     };
   },
-  created() {
-    eventBus.$on("updateLeaguesData", (length) => {
-      this.leaguesDataLength = length;
-    });
+
+  computed: {
+    ...mapGetters({
+      coupons: 'global/getCoupons',
+    })
   },
 
   methods: {
@@ -61,12 +61,6 @@ export default {
     basketModalClose(param) {
       this.basketModalIsOpen = false;
       this.$emit("basketModalIsClosed");
-    },
-    handleRemoveLeague(index) {
-      // leaguesDataLength'ı azalt
-      if (this.leaguesDataLength > 0) {
-        this.leaguesDataLength -= 1;
-      }
     },
   },
 };
@@ -79,12 +73,12 @@ export default {
 }
 
 .basket-modal-animation-enter,
-.basket-modal-animation-leave-to /* .basket-modal-animation-leave-active in <2.1.8 */ {
+.basket-modal-animation-leave-to {
   transform: translateX(100%);
 }
 
 .basket-modal-animation-enter-to,
-.basket-modal-animation-leave /* .basket-modal-animation-leave-active in <2.1.8 */ {
+.basket-modal-animation-leave {
   transform: translateX(0);
 }
 </style>

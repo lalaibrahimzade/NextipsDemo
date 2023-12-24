@@ -63,11 +63,9 @@
     }
     .centered {
       display: flex;
-      margin-bottom: 5px;
       width: 100%;
-      height: 52px;
       opacity: 0.7px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
 
       p {
         text-align: left;
@@ -75,6 +73,7 @@
         font-family: "Inter", sans-serif;
         position: relative;
         font-size: 14px;
+        
         .more {
           font-family: "Inter", sans-serif;
           font-size: 14px;
@@ -84,22 +83,16 @@
           text-align: left;
           position: absolute;
           left: 93%;
-          top: 90%;
+          top: 65%;
           cursor: pointer;
         }
       }
     }
 
     .league-card {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 10px;
-
       .league {
         display: flex;
+        margin: 10px 10px;
         flex-direction: column;
         background-color: $gray;
         border-radius: 15px;
@@ -173,7 +166,7 @@
               }
             }
             .line {
-              width: 400px;
+              width: 100%;
               background-color: $light-gray;
               height: 1px;
             }
@@ -276,7 +269,6 @@
         border: 1px solid $light-gray;
         border-radius: 15px;
         display: flex;
-        float: left;
         padding: 10px;
         .coefficient{
           display: flex;

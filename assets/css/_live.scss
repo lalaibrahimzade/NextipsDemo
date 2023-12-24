@@ -1,6 +1,8 @@
 .live {
   @extend %section-property;
-  font-family: 'Inter', sans-serif;
+  gap: 10px;
+  font-family: "Inter", sans-serif;
+  padding: 5px 16px 16px 8px;
   .live-countries {
     @extend %search-country-leauge;
     .sec-one {
@@ -13,7 +15,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      width: 154px;
+      width: 100%;
       max-height: fit-content;
       min-height: 184px;
       background-color: $dark-gray;
@@ -23,7 +25,7 @@
         display: flex;
         justify-content: center;
         ul {
-          width: 144px;
+          width: 100%;
           height: 24px;
           list-style: none;
           padding: 0;
@@ -83,7 +85,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      width: 154px;
+      width: 100%;
       max-height: fit-content;
       min-height: 184px;
       background-color: $dark-gray;
@@ -148,48 +150,32 @@
     color: white;
     border-radius: 8px;
     margin-top: 12px;
-    margin-left: 23px;
 
     .head-couponlig {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-top: 8px;
+      padding: 12px;
       height: 30px;
-      width: 315px;
+      width: 100%;
       .lig-name {
-        width: 190px;
-        height: 25px;
         display: flex;
-        margin-left: 12px;
-        justify-content: space-between;
-        .flag {
-          width: 12px;
-          height: 12px;
-        }
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
 
-        p {
-          font-family: Inter;
+        .country-name {
+          font-family: "Inter", sans-serif;
+          font-size: 12px;
           font-weight: 500;
           line-height: 13px;
           letter-spacing: 0em;
           text-align: left;
-          font-size: 12px;
-        }
-      }
-
-      .pin-icon {
-        margin-bottom: 15px;
-        margin-left: 4%;
-        img {
-          height: 17px;
-          width: 17px;
+          margin-bottom: 0;
         }
       }
 
       .toggle {
-        margin-bottom: 15px;
-        margin-left: 12%;
         img {
           width: 12.76px;
           height: 6.18px;
@@ -200,61 +186,64 @@
     .lig-card {
       width: 100%;
       height: 56px;
-      padding: 4px 0px 4px 14px;
+      padding: 4px;
       display: flex;
+      justify-content: space-between;
       background-color: $dark-gray;
       border-bottom: 1px solid $light-gray;
       &.collapsed {
         display: none;
       }
+
       .time-sec {
-        margin-right: 14px;
         display: flex;
         flex-direction: column;
-        padding: 12px 0px 4px 0px;
-        color: $smoke-white;
-
+        align-items: center;
+        padding: 12px 0 12px 0;
+        width: 20%;
         .time {
-          width: 39px;
-          height: 15px;
-          font-family: Inter;
+          font-family: "Inter", sans-serif;
           font-size: 12px;
           font-weight: 500;
           line-height: 15px;
           letter-spacing: 0.003em;
           text-align: center;
+          margin-bottom: 0;
+          margin-top: 0;
         }
 
         .time-part {
-          width: 100%;
-          font-family: Inter;
-          font-size: 9px;
+          font-family: "Inter", sans-serif;
+          font-size: 11px;
           font-weight: 500;
-          line-height: 13px;
+          line-height: 12px;
           letter-spacing: 0.003em;
           text-align: center;
           color: $time-part;
+          margin-bottom: 0;
         }
       }
 
       .teams {
         display: flex;
         flex-direction: column;
-        min-width: 150px;
-        height: 48px;
-        padding: 0px 0 6px 0;
-        gap: 12px;
-        .team-first {
+        width: 70%;
+        gap: 10px;
+        .first-team {
           display: flex;
-          height: 15px;
+          float: left;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 50px;
+
           .team-head {
             display: flex;
+            float: left;
+            width: 70%;
             img {
-              margin-top: 8px;
               width: 15px;
               height: 15px;
             }
-
             h1 {
               font-family: "Inter", sans-serif;
               font-size: 12px;
@@ -262,43 +251,40 @@
               line-height: 15px;
               letter-spacing: 0.003em;
               text-align: left;
-              margin-left: 5px;
+              margin: 0;
             }
           }
+
           .count-team-first {
+            width: 30%;
             display: flex;
             float: left;
-            margin-top: 4px;
-            margin-left: 70px;
-            align-items: center;
-            .count-team {
-              font-family: Inter;
-              font-size: 12px;
-              letter-spacing: 0.003em;
-              text-align: center;
-            }
-            .count-teamF {
-              font-family: Inter;
-              font-size: 12px;
-              letter-spacing: 0.003em;
-              text-align: center;
-              margin-left: 17px;
-            }
+            gap: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 15px;
+            letter-spacing: 0.003em;
+            text-align: center;
+
           }
         }
 
-        .team-second {
+        .second-team {
           display: flex;
-          height: 15px;
+          float: left;
           align-items: center;
+          justify-content: flex-start;
+          gap: 50px;
+
           .team-head {
+            width: 70%;
             display: flex;
+            float: left;
             img {
-              margin-top: 8px;
               width: 15px;
               height: 15px;
             }
-
             h1 {
               font-family: "Inter", sans-serif;
               font-size: 12px;
@@ -306,42 +292,28 @@
               line-height: 15px;
               letter-spacing: 0.003em;
               text-align: left;
-              margin-left: 5px;
+              margin: 0;
             }
           }
 
           .count-team-sec {
+            width: 30%;
             display: flex;
             float: left;
-            margin-top: 8px;
-            margin-left: 74px;
-            align-items: center;
-            .count-team {
-              font-family: Inter;
-              font-size: 12px;
-              letter-spacing: 0.003em;
-              text-align: center;
-            }
-            .count-teamF {
-              font-family: Inter;
-              font-size: 12px;
-              letter-spacing: 0.003em;
-              text-align: center;
-              margin-left: 19px;
-            }
+            gap: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 15px;
+            letter-spacing: 0.003em;
+            text-align: center;
+
           }
         }
       }
 
-      .alarm-icon {
-        position: absolute;
-        margin-left: 21.5%;
-        margin-top: 8px;
-        cursor: pointer;
-
-        .alarm-active {
-          color: red;
-        }
+      .alarm-icon{
+        width: 10%;
       }
     }
   }

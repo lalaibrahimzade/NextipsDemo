@@ -1,7 +1,10 @@
 <template>
   <div>
     <auth v-if="authModalIsOpen" @close="authModalClose()"/>
-    <div class="sidebar">
+    <div class="hamburger-menu" @click="toggleSidebar">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="sidebar" :class="{ 'is-active': sidebarOpen }">
       <nav class="sidebar-navigation">
         <ul class="nav-list">
           <li>
@@ -129,6 +132,7 @@ export default {
   data() {
     return {
       authModalIsOpen: false,
+      sidebarOpen: false,
     };
   },
   methods: {
@@ -142,6 +146,9 @@ export default {
     },
     addGameHandle() {
       eventBus.$emit("liveItemClick");
+    },
+    toggleSidebar() {
+      this.sidebarOpen = !this.sidebarOpen;
     },
   },
 };

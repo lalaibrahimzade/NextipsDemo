@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .sidebar {
+    width: 200px;
+    display: none;
+  }
+
+  .sidebar.is-active {
+    display: block;
+  }
+
+  .right-sidebar {
+    margin-left: 0;
+  }
+
+  .follow-notification{
+    flex-direction: column;
+    .btn-followback{
+      padding: 0.3em 1.2em 0.3em 1.2em !important;
+      align-items: center;
+    }
+  }
+}
